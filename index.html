@@ -1,0 +1,3515 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>روابط المساعدات - غزة | الدليل التوثيقي الشامل للمساعدات الإنسانية</title>
+  <meta name="description" content="روابط المساعدات في قطاع غزة - التسجيلات الرسمية، المساعدات والإغاثة، ورعاية الأيتام مع شرح خطوات التسجيل والأوراق المطلوبة والروابط المباشرة المعتمدة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/tajawal@5.1.0/400.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/tajawal@5.1.0/500.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/tajawal@5.1.0/700.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/tajawal@5.1.0/800.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans-arabic@5.1.0/400.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans-arabic@5.1.0/500.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans-arabic@5.1.0/600.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans-arabic@5.1.0/700.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/cairo@5.1.0/400.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/cairo@5.1.0/600.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/cairo@5.1.0/700.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/cairo@5.1.0/800.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Tajawal', 'IBM Plex Sans Arabic', 'Cairo', 'Almarai', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      --app-font: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', 'Almarai', sans-serif;
+    }
+    html, body, *, button, input, select, textarea, h1, h2, h3, h4, p, span, a {
+      font-family: var(--app-font) !important;
+      letter-spacing: 0px !important;
+      font-synthesis: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    .en-font {
+      font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif !important;
+      letter-spacing: 0.2px !important;
+    }
+    .aid-card {
+      border: 1.5px solid #22c55e;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .aid-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px -6px rgba(22, 163, 74, 0.16);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#f8fafc] text-slate-800 flex flex-col">
+
+  <!-- إشعار عائم Toast -->
+  <div id="toastContainer" class="fixed bottom-5 left-5 z-50 hidden items-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-medium text-white shadow-xl border border-slate-700">
+    <span class="text-emerald-400 font-bold">✓</span>
+    <span id="toastText"></span>
+  </div>
+
+  <!-- الهيدر البسيط والنظيف (مطابق للصورة المرفقة) -->
+  <header class="sticky top-0 z-40 bg-white border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex h-20 items-center justify-between">
+
+        <!-- القائمة اليمنى (الرئيسية، عن الموقع، تواصل معنا + الصفحات القانونية لأدسنس) -->
+        <nav class="hidden md:flex items-center gap-6" id="desktopNav">
+          <button type="button" onclick="switchMainView('home')" data-nav="home" class="nav-btn text-base font-extrabold text-emerald-600 transition-colors">
+            الرئيسية
+          </button>
+          <button type="button" onclick="switchMainView('about')" data-nav="about" class="nav-btn text-base font-bold text-slate-600 hover:text-emerald-600 transition-colors">
+            عن الموقع
+          </button>
+          <button type="button" onclick="switchMainView('contact')" data-nav="contact" class="nav-btn text-base font-bold text-slate-600 hover:text-emerald-600 transition-colors">
+            تواصل معنا
+          </button>
+          <button type="button" onclick="switchMainView('privacy')" data-nav="privacy" class="nav-btn text-sm font-semibold text-slate-500 hover:text-emerald-600 transition-colors">
+            سياسة الخصوصية
+          </button>
+          <button type="button" onclick="switchMainView('disclaimer')" data-nav="disclaimer" class="nav-btn text-sm font-semibold text-slate-500 hover:text-emerald-600 transition-colors">
+            إخلاء المسؤولية
+          </button>
+          <button type="button" onclick="switchMainView('adsense-studio')" data-nav="adsense-studio" class="nav-btn text-xs font-bold bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-full border border-emerald-200 hover:bg-emerald-100 transition-colors">
+            + إضافة رابط
+          </button>
+        </nav>
+
+        <!-- زر القائمة للموبايل -->
+        <div class="flex md:hidden">
+          <button
+            type="button"
+            onclick="toggleMobileMenu()"
+            class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 font-bold text-xl"
+            aria-label="القائمة"
+          >
+            ☰
+          </button>
+        </div>
+
+        <!-- الشعار واسم الموقع على اليسار كما في الصورة -->
+        <button
+          type="button"
+          onclick="switchMainView('home')"
+          class="flex items-center gap-3 focus:outline-none"
+        >
+          <span class="text-xl sm:text-2xl font-bold text-slate-800">
+            روابط المساعدات - غزة
+          </span>
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 shadow-inner">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- قائمة الموبايل المنسدلة -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 bg-white px-4 pt-2 pb-4 space-y-1">
+      <button type="button" onclick="switchMainView('home'); toggleMobileMenu();" class="block w-full text-right px-3 py-2 rounded-lg text-sm font-bold text-emerald-700 bg-emerald-50">
+        الرئيسية
+      </button>
+      <button type="button" onclick="switchMainView('about'); toggleMobileMenu();" class="block w-full text-right px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">
+        عن الموقع
+      </button>
+      <button type="button" onclick="switchMainView('contact'); toggleMobileMenu();" class="block w-full text-right px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">
+        تواصل معنا
+      </button>
+      <button type="button" onclick="switchMainView('privacy'); toggleMobileMenu();" class="block w-full text-right px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">
+        سياسة الخصوصية
+      </button>
+      <button type="button" onclick="switchMainView('disclaimer'); toggleMobileMenu();" class="block w-full text-right px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">
+        إخلاء المسؤولية
+      </button>
+      <button type="button" onclick="switchMainView('terms'); toggleMobileMenu();" class="block w-full text-right px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">
+        شروط الاستخدام
+      </button>
+      <button type="button" onclick="switchMainView('adsense-studio'); toggleMobileMenu();" class="block w-full text-right px-3 py-2 rounded-lg text-sm font-semibold text-emerald-700 hover:bg-slate-50">
+        + إضافة رابط مساعدة جديد
+      </button>
+    </div>
+  </header>
+
+  <!-- شريط التبويبات المفتوحة للأدلة (يظهر عند فتح أكثر من دليل) -->
+  <div id="openTabsBar" class="hidden bg-slate-900 text-slate-200 border-b border-slate-800 px-4 py-1.5">
+    <div class="max-w-6xl mx-auto flex items-center gap-2 overflow-x-auto" id="openTabsContainer"></div>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex-1 w-full">
+
+    <!-- ================= 1. الصفحة الرئيسية البسيطة والنظيفة ================= -->
+    <div id="view-home">
+
+      <!-- شريط الفلاتر والبحث الموحد (مطابق للصورة تماماً) -->
+      <section class="rounded-2xl bg-white border border-slate-200/90 px-4 py-3.5 shadow-sm mb-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+
+          <!-- أزرار التصنيفات الملونة على اليمين -->
+          <div class="flex flex-wrap items-center gap-2.5 w-full md:w-auto justify-center md:justify-start" id="categoryGridContainer">
+            <!-- يتم توليده ديناميكياً -->
+          </div>
+
+          <!-- مربع البحث على اليسار -->
+          <div class="relative w-full md:w-72">
+            <input
+              id="searchInput"
+              type="text"
+              oninput="handleSearchInput(this.value)"
+              placeholder="ابحث عن مساعدة أو جهة..."
+              class="w-full rounded-xl bg-slate-50 border border-slate-200 pr-4 pl-10 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:bg-white focus:border-emerald-500 focus:outline-none transition-all"
+            />
+            <span class="absolute left-3.5 top-2.5 text-slate-400 pointer-events-none">
+              🔍
+            </span>
+            <button
+              id="clearSearchBtn"
+              type="button"
+              onclick="clearSearch()"
+              class="hidden absolute left-9 top-2.5 text-xs text-slate-400 hover:text-slate-700 font-bold"
+            >
+              ✕
+            </button>
+          </div>
+
+        </div>
+
+        <!-- شريط فرعي خفيف للمحافظات والعدد -->
+        <div class="mt-3 pt-2.5 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+          <div class="flex flex-wrap items-center gap-1.5" id="govFilterContainer"></div>
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="flex items-center gap-1 bg-slate-100 px-2 py-1 rounded-lg">
+              <span class="text-[11px] font-bold text-slate-500">نوع الخط:</span>
+              <button type="button" onclick="changeArabicFont('Cairo')" id="fontBtn-Cairo" class="px-2 py-0.5 rounded text-[11px] font-extrabold bg-white text-emerald-700 shadow-sm">القاهرة (Cairo)</button>
+              <button type="button" onclick="changeArabicFont('Tajawal')" id="fontBtn-Tajawal" class="px-2 py-0.5 rounded text-[11px] font-bold text-slate-600 hover:text-slate-900">تجوال (Tajawal)</button>
+              <button type="button" onclick="changeArabicFont('Almarai')" id="fontBtn-Almarai" class="px-2 py-0.5 rounded text-[11px] font-bold text-slate-600 hover:text-slate-900">المراعي (Almarai)</button>
+            </div>
+            <span id="initiativesCountBadge" class="font-bold text-slate-500"></span>
+            <button
+              type="button"
+              onclick="toggleAdPreview()"
+              id="adPreviewToggleBtn"
+              class="text-[11px] font-semibold text-slate-400 hover:text-emerald-600 underline"
+            >
+              إخفاء/إظهار مكان الإعلان
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- مساحة إعلانية مخصصة (Google AdSense) مطابقة للصورة -->
+      <div class="adsense-slot my-6 w-full rounded-2xl border border-dashed border-slate-200 bg-slate-50/70 py-7 px-4 text-center">
+        <p class="text-sm font-medium text-slate-400">
+          مساحة إعلانية مخصصة (Google AdSense)
+        </p>
+      </div>
+
+      <!-- شبكة البطاقات (3 أعمدة بإطار أخضر وتصميم مركزي نظيف مطابق للصورة) -->
+      <section class="mb-12">
+        <div id="initiativesCardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- يتم توليده ديناميكياً -->
+        </div>
+      </section>
+
+      <!-- شريط تنبيه الأمان المبسط أسفل البطاقات (مهم لقبول AdSense وحماية المستخدمين) -->
+      <section class="rounded-2xl bg-white border border-slate-200 p-6 text-center shadow-sm">
+        <h2 class="text-base font-extrabold text-slate-800 mb-2">
+          🛡️ ملاحظة أمان وتوثيق لأهالي قطاع غزة
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          جميع روابط المساعدات المنشورة في هذا الموقع هي روابط رسمية ومجانية 100%. عند الضغط على <strong>"التسجيل المباشر"</strong> في أي بطاقة، ستفتح لك صفحة الدليل الكامل (الأوراق المطلوبة، خطوات التسجيل، والرابط الرسمي المباشر) في تبويبة متصفح جديدة ومستقلة.
+        </p>
+      </section>
+
+    </div>
+
+    <!-- ================= 2. صفحة الدليل التفصيلي للمبادرة ================= -->
+    <div id="view-guide" class="hidden max-w-4xl mx-auto">
+      <div id="singleGuideContainer"></div>
+    </div>
+
+    <!-- ================= 3. لوحة قبول AdSense وإضافة روابط جديدة ================= -->
+    <div id="view-adsense-studio" class="hidden space-y-8">
+      <div class="rounded-2xl bg-white border-2 border-emerald-500 p-6 sm:p-8 shadow-sm">
+        <h1 class="text-2xl font-extrabold text-slate-900 mb-2">
+          ➕ إضافة بطاقة رابط مساعدة جديد + فحص جاهزية Google AdSense
+        </h1>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          أضف أي مؤسسة أو رابط مساعدة جديد ليظهر فوراً بنفس تصميم البطاقات البسيط مع صفحة دليل كاملة تفتح في تبويبة جديدة.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-5 bg-white rounded-2xl border border-slate-200 p-6 shadow-sm h-fit">
+          <h2 class="text-base font-extrabold text-slate-900 mb-4">
+            ✅ لماذا يقبل Google AdSense هذا التصميم؟
+          </h2>
+          <div class="space-y-3 text-xs">
+            <div class="p-3 rounded-xl bg-emerald-50/60 border border-emerald-200">
+              <strong class="text-slate-900 block mb-0.5">1. واجهة سريعة ونظيفة + محتوى تفصيلي</strong>
+              <span class="text-slate-600">البطاقات بسيطة ومريحة للعين، وعند فتح أي بطاقة يجد الزائر (وروبوت جوجل) شرحاً كاملاً وخطوات وأسئلة شائعة تمنع رفض "المحتوى الضحل".</span>
+            </div>
+            <div class="p-3 rounded-xl bg-emerald-50/60 border border-emerald-200">
+              <strong class="text-slate-900 block mb-0.5">2. فتح كل دليل في تبويبة متصفح مستقلة</strong>
+              <span class="text-slate-600">كل بطاقة تفتح في تبويبة جديدة مستقلة مع زر الانتقال المباشر للمؤسسة الرسمية.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-emerald-50/60 border border-emerald-200">
+              <strong class="text-slate-900 block mb-0.5">3. اكتمال الصفحات القانونية الإلزامية</strong>
+              <span class="text-slate-600">يضم صفحات سياسة الخصوصية، إخلاء المسؤولية، شروط الاستخدام، عن الموقع، وتواصل معنا.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+          <h2 class="text-base font-extrabold text-slate-900 mb-4">
+            إضافة بطاقة مساعدة جديدة
+          </h2>
+          <form onsubmit="handleAddInitiativeSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">اسم الجهة بالعربية (يظهر أعلى البطاقة) *</label>
+                <input id="newTitle" type="text" required placeholder="مثال: جمعية الهلال الأحمر الفلسطيني" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">الاسم بالإنجليزية (تحت العنوان) *</label>
+                <input id="newOrg" type="text" required placeholder="Palestine Red Crescent Society" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">التصنيف</label>
+                <select id="newCat" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm bg-white focus:border-emerald-600 focus:outline-none">
+                  <option value="official">التسجيلات الرسمية</option>
+                  <option value="relief">المساعدات والإغاثة</option>
+                  <option value="orphans">رعاية الأيتام</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">الرابط الرسمي للتسجيل (URL) *</label>
+                <input id="newUrl" type="url" required dir="ltr" value="https://" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">وصف مختصر للمساعدة (يظهر وسط البطاقة) *</label>
+              <textarea id="newSummary" rows="2" required placeholder="مثال: توفير المساعدات الإغاثية الطارئة والطرود الغذائية للأسر المتضررة" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none"></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">قيمة المساعدة (داخل المربع الأخضر المنقط)</label>
+                <input id="newReq1" type="text" value="طرود غذائية + مساعدات إغاثية" class="w-full rounded-xl border border-slate-300 px-3 py-2 text-xs focus:border-emerald-600 focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">الوثائق المطلوبة</label>
+                <input id="newReq2" type="text" value="بطاقة الهوية الشخصية ورقم هاتف فعال." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-xs focus:border-emerald-600 focus:outline-none" />
+              </div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap items-center justify-between gap-3">
+              <button type="submit" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 text-sm font-bold text-white hover:bg-emerald-700 shadow-sm">
+                ➕ إضافة البطاقة للموقع الآن
+              </button>
+              <button type="button" onclick="copyAllInitiativesJson()" class="inline-flex items-center gap-1.5 rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-100">
+                📋 نسخ بيانات JSON
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= 4. صفحة سياسة الخصوصية ================= -->
+    <article id="view-privacy" class="hidden max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm leading-relaxed">
+      <header class="border-b border-slate-200 pb-6 mb-6">
+        <span class="text-emerald-600 text-xs font-bold block mb-2">الوثائق القانونية الرسمية</span>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">سياسة الخصوصية وملفات تعريف الارتباط</h1>
+        <p class="text-xs text-slate-500">آخر تحديث: 20 أكتوبر 2026</p>
+      </header>
+      <div class="space-y-6 text-sm sm:text-base text-slate-700">
+        <section>
+          <h2 class="text-lg font-bold text-slate-900 mb-2">1. حماية البيانات الشخصية</h2>
+          <p>موقع <strong>"روابط المساعدات - غزة"</strong> هو منصة إرشادية وتوثيقية مستقلة. نحن لا نجمع ولا نخزن أرقام الهويات الشخصية أو أرقام المحافظ المالية أو البيانات الحساسة للمواطنين. كافة عمليات التسجيل تتم مباشرة داخل المواقع الرسمية للمنظمات المانحة.</p>
+        </section>
+        <section>
+          <h2 class="text-lg font-bold text-slate-900 mb-2">2. ملفات تعريف الارتباط وإعلانات Google AdSense</h2>
+          <p>يستخدم هذا الموقع ملفات تعريف الارتباط (Cookies) لتحسين تجربة التصفح، كما تستخدم شركة Google بصفتها مورداً لطرف ثالث ملفات تعريف الارتباط (DART) لعرض الإعلانات المناسبة للمستخدمين. يمكن للمستخدمين تعطيل الإعلانات المخصصة عبر زيارة إعدادات إعلانات Google الرسمية: <span class="font-mono text-xs text-emerald-700" dir="ltr">https://policies.google.com/technologies/ads</span></p>
+        </section>
+      </div>
+    </article>
+
+    <!-- ================= 5. صفحة إخلاء المسؤولية ================= -->
+    <article id="view-disclaimer" class="hidden max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm leading-relaxed">
+      <header class="border-b border-slate-200 pb-6 mb-6">
+        <span class="text-amber-600 text-xs font-bold block mb-2">إشعار قانوني هام</span>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">إخلاء المسؤولية العامة</h1>
+      </header>
+      <div class="bg-amber-50 border-r-4 border-amber-500 p-5 rounded-l-xl mb-6 text-sm text-amber-950">
+        <strong>تنبيه صريح:</strong> موقع "روابط المساعدات - غزة" هو دليل إرشادي مستقل، لا يجمع أي تبرعات مالية أو عينية، ولا يمثل الأونروا أو الأمم المتحدة أو أي وزارة حكومية.
+      </div>
+      <p class="text-sm sm:text-base text-slate-700">تقتصر مهمة الموقع على تجميع وتوثيق وشرح الروابط الرسمية المتاحة للعامة لتسهيل وصول الأسر المتضررة إليها مجاناً وبأمان، وتخضع معايير القبول والصرف للجهات المانحة حصراً.</p>
+    </article>
+
+    <!-- ================= 6. صفحة شروط الاستخدام ================= -->
+    <article id="view-terms" class="hidden max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm leading-relaxed">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">شروط وأحكام الاستخدام</h1>
+      <p class="text-sm sm:text-base text-slate-700 mb-4">المحتوى المنشور في موقع "روابط المساعدات - غزة" مخصص لإرشاد الأسر والمواطنين مجاناً، ويُحظر استغلال الروابط من قبل أي وسطاء لتقاضي مبالغ مالية من المواطنين.</p>
+    </article>
+
+    <!-- ================= 7. صفحة عن الموقع ================= -->
+    <article id="view-about" class="hidden max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm leading-relaxed">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">عن الموقع (روابط المساعدات - غزة)</h1>
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
+        منصة إرشادية وتوثيقية مبسطة تهدف إلى جمع وتنظيم روابط التسجيل الرسمية للمساعدات الغذائية، النقدية، الإغاثية، وكفالات الأيتام في قطاع غزة في مكان واحد، مع تقديم شرح وافٍ لخطوات التسجيل والأوراق المطلوبة لكل جهة لحماية المواطنين من الروابط المزيفة.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-center">
+          <strong class="block text-emerald-900 mb-1">روابط رسمية موثقة</strong>
+          <span class="text-xs text-slate-600">نتحقق من مصداقية كل رابط قبل نشره.</span>
+        </div>
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-center">
+          <strong class="block text-emerald-900 mb-1">شرح خطوة بخطوة</strong>
+          <span class="text-xs text-slate-600">توضيح الأوراق المطلوبة وطريقة التسجيل الصحيح.</span>
+        </div>
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-center">
+          <strong class="block text-emerald-900 mb-1">خدمة مجانية 100%</strong>
+          <span class="text-xs text-slate-600">توعية مستمرة ضد الصفحات الوهمية والسماسرة.</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ================= 8. صفحة تواصل معنا ================= -->
+    <div id="view-contact" class="hidden max-w-3xl mx-auto bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">تواصل معنا</h1>
+      <p class="text-sm text-slate-600 mb-6">لإرسال رابط مبادرة رسمية جديدة، أو الإبلاغ عن رابط لا يعمل، تواصل معنا عبر النموذج التالي:</p>
+
+      <form onsubmit="handleContactFormSubmit(event)" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">الاسم الكامل *</label>
+            <input id="contactName" type="text" required placeholder="أدخل اسمك" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-emerald-600 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">البريد الإلكتروني (اختياري)</label>
+            <input id="contactEmail" type="email" dir="ltr" placeholder="name@example.com" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-emerald-600 focus:outline-none" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">نوع الرسالة</label>
+          <select id="contactType" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm bg-white focus:border-emerald-600 focus:outline-none">
+            <option value="new-link">إضافة رابط مساعدة جديد</option>
+            <option value="report-scam">الإبلاغ عن رابط مزيف</option>
+            <option value="update-info">تحديث رابط حالي</option>
+            <option value="general">استفسار عام</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">الرسالة أو الرابط *</label>
+          <textarea id="contactMsg" rows="4" required placeholder="اكتب التفاصيل هنا..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:border-emerald-600 focus:outline-none"></textarea>
+        </div>
+        <button type="submit" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 text-sm font-bold text-white hover:bg-emerald-700 shadow-sm">
+          إرسال الرسالة
+        </button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- نافذة معاينة SEO & JSON-LD Schema -->
+  <div id="schemaModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm">
+    <div class="max-w-2xl w-full rounded-2xl bg-white p-6 shadow-2xl border border-slate-200 max-h-[85vh] flex flex-col">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
+        <h3 class="text-base font-extrabold text-slate-900">البيانات المهيكلة (JSON-LD Schema) ووسوم SEO</h3>
+        <button type="button" onclick="closeSchemaModal()" class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 font-bold">✕</button>
+      </div>
+      <div class="overflow-y-auto space-y-3 text-xs flex-1">
+        <div class="p-3 rounded-xl bg-slate-100 space-y-1" id="schemaMetaSummary"></div>
+        <pre id="schemaJsonPre" dir="ltr" class="p-4 rounded-xl bg-slate-900 text-emerald-300 font-mono text-[11px] overflow-x-auto leading-relaxed"></pre>
+      </div>
+      <div class="pt-4 border-t border-slate-200 mt-4 flex justify-end gap-2">
+        <button type="button" onclick="copyCurrentSchema()" class="rounded-xl bg-emerald-600 px-4 py-2 text-xs font-bold text-white hover:bg-emerald-700">نسخ كود JSON-LD</button>
+        <button type="button" onclick="closeSchemaModal()" class="rounded-xl bg-slate-100 px-4 py-2 text-xs font-bold text-slate-700 hover:bg-slate-200">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- الفوتر النظيف مع الروابط القانونية المطلوبة لأدسنس -->
+  <footer class="bg-white border-t border-slate-200 mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-extrabold text-slate-800 text-sm">روابط المساعدات - غزة</span>
+          <span class="text-xs text-slate-400">| منصة إرشادية مستقلة لا تجمع تبرعات</span>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-slate-600">
+          <button type="button" onclick="switchMainView('home')" class="hover:text-emerald-600">الرئيسية</button>
+          <button type="button" onclick="switchMainView('about')" class="hover:text-emerald-600">عن الموقع</button>
+          <button type="button" onclick="switchMainView('privacy')" class="hover:text-emerald-600">سياسة الخصوصية</button>
+          <button type="button" onclick="switchMainView('disclaimer')" class="hover:text-emerald-600">إخلاء المسؤولية</button>
+          <button type="button" onclick="switchMainView('terms')" class="hover:text-emerald-600">شروط الاستخدام</button>
+          <button type="button" onclick="switchMainView('contact')" class="hover:text-emerald-600">تواصل معنا</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- السكربت الرئيسي -->
+  <script>
+    const INITIAL_INITIATIVES = [
+  {
+    "id": "rafah-municipality-egyptian-parcels-check",
+    "shortName": "الاستعلام عن الطرود المصرية لأهالي رفح",
+    "englishName": "Rafah Municipality Egyptian Food Parcels Check",
+    "title": "نظام الاستعلام عن الطرود المصرية لأهالي مدينة رفح (بلدية رفح - murafah.org)",
+    "organization": "بلدية رفح - لجنة الطوارئ وتوزيع المساعدات",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "أهالي رفح",
+      "الطرود المصرية"
+    ],
+    "aidValue": "طرود غذائية مصرية لأهالي رفح",
+    "status": "active",
+    "governorates": [
+      "رفح",
+      "خانيونس",
+      "دير البلح (الوسطى)"
+    ],
+    "targetAudience": "الأسر والمواطنون من سكان مدينة رفح (المقيمون والنازحون في المحافظات الأخرى)",
+    "summary": "البوابة الرسمية لبلدية رفح للاستعلام برقم الهوية عن استحقاق وموعد استلام الطرود الغذائية المصرية",
+    "detailedExplanation": "أطلقت بلدية رفح بالتعاون مع لجان الطوارئ والأحياء منظومة الاستعلام الإلكترونية الرسمية (murafah.org/aid-system/public/aid/food-check) المخصصة لأهالي مدينة رفح، لتمكين أرباب الأسر من فحص أسمائهم برقم الهوية في كشوفات توزيع الطرود الغذائية المصرية، ومعرفة حالة الاستحقاق ونقطة وموعد الاستلام المعتمد سواء للأسر المتواجدة أو النازحة في مخيمات خانيونس والوسطى.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة من سكان مدينة رفح (9 أرقام).",
+      "إحضار بطاقة الهوية الأصلية عند التوجه لنقطة تسليم الطرود المحددة في نتيجة الفحص.",
+      "أن تكون بيانات الأسرة وعنوان النزوح محدثة لدى بلدية رفح أو مندوبي الأحياء."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح رابط نظام الاستعلام الرسمي لبلدية رفح",
+        "description": "اضغط على زر التسجيل المباشر لفتح صفحة فحص الطرود الغذائية (murafah.org)."
+      },
+      {
+        "step": 2,
+        "title": "إدخال رقم الهوية الشخصية",
+        "description": "اكتب رقم هوية رب الأسرة المكون من 9 أرقام باللغة الإنجليزية في الحقل المخصص واضغط على زر البحث/الاستعلام."
+      },
+      {
+        "step": 3,
+        "title": "مراجعة نتيجة الفحص ومخزن التسليم",
+        "description": "تعرّف على حالة شمول أسرتك في الدورة الحالية واسم المخزن أو نقطة التوزيع والموعد المحدد للاستلام."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من كتابة الأرقام باللغة الإنجليزية (0-9) دون فراغات قبل أو بعد رقم الهوية.",
+      "في حال لم يظهر اسمك في الكشف الحالي، يتم تحديث القوائم تباعاً مع وصول دفعات جديدة من الطرود المصرية."
+    ],
+    "officialUrl": "https://murafah.org/aid-system/public/aid/food-check",
+    "contactInfo": "البوابة الإلكترونية الرسمية لبلدية رفح: murafah.org",
+    "warningNote": "تنبيه: توزيع الطرود المصرية لأهالي مدينة رفح مجاني تماماً ويتم بموجب بطاقة الهوية الأصلية عبر اللجان المعتمدة فقط.",
+    "faqs": [
+      {
+        "question": "هل يشمل هذا الفحص أهالي مدينة رفح النازحين في مواصي خانيونس والوسطى؟",
+        "answer": "نعم، المنظومة مخصصة لجميع أهالي مدينة رفح المسجلين، وتوضح نتيجة الفحص نقطة التوزيع المعتمدة لاستلام الطرد."
+      },
+      {
+        "question": "ماذا أفعل إذا كنت من سكان رفح وتغير مكان نزوحي مؤخراً؟",
+        "answer": "تأكد من تحديث عنوان تواجدك الحالي عبر بوابة بلدية رفح أو التواصل مع مندوب الحي المعتمد لضمان إدراجك في النقطة الأقرب إليك."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "reach-education-fund-sole-survivors-orphans",
+    "shortName": "تسجيل أيتام (برنامج الناجي الوحيد)",
+    "englishName": "Reach Education Fund - Sole Survivors",
+    "title": "تسجيل الأيتام والأطفال في برنامج (الناجي الوحيد) - مؤسسة ريتش (Reach Education Fund)",
+    "organization": "صندوق ريتش التعليمي والإنساني (Reach Education Fund)",
+    "category": "orphans",
+    "categoryName": "رعاية الأيتام",
+    "tags": [
+      "برنامج الناجي الوحيد",
+      "كفالة الأيتام"
+    ],
+    "aidValue": "كفالة شاملة ورعاية تعليمية ومعيشية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأطفال الأيتام والناجون الوحيدون الذين فقدوا عائلاتهم أو والديهم جراء الحرب في قطاع غزة",
+    "summary": "الاستمارة الرسمية لتسجيل الأطفال الأيتام والناجين الوحيدين للحصول على كفالة معيشية وتعليمية شاملة",
+    "detailedExplanation": "أطلق صندوق ريتش التعليمي (Reach Education Fund) استمارة التسجيل الرسمية في برنامج (الناجي الوحيد - Sole Survivors) المخصص لحصر ورعاية الأطفال الأيتام والطلبة الذين فقدوا كافة أفراد أسرهم أو والديهم في قطاع غزة. يهدف البرنامج إلى توفير كفالة مالية ومعيشية مستدامة، ورعاية صحية ونفسية، وضمان استمرار المسيرة التعليمية للأطفال والفتية الناجين بالتنسيق مع الأوصياء الشرعيين والأسر الحاضنة.",
+    "requirements": [
+      "بيانات الطفل اليتيم أو الناجي الوحيد (الاسم الرباعي، رقم الهوية، وتاريخ الميلاد).",
+      "بيانات الوالدين وأفراد الأسرة الشهداء وتاريخ ومكان الاستشهاد.",
+      "بيانات المعيل أو الوصي الحالي المشرف على رعاية الطفل (الاسم، صلة القرابة، رقم الهوية، ورقم الجوال).",
+      "المستندات الثبوتية المتوفرة (شهادات وفاة، إشعارات مستشفى، أو صور الهويات وشهادة الميلاد)."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح رابط برنامج الناجي الوحيد الرسمي",
+        "description": "انتقل إلى الرابط الرسمي المعتمد (reacheducationfund.com/reg-sole-survivors)."
+      },
+      {
+        "step": 2,
+        "title": "تعبئة بيانات الطفل الناجي والأسرة",
+        "description": "أدخل المعلومات الشخصية للطفل وتفاصيل فقدان الأسرة والحالة الصحية أو الإصابة إن وُجدت."
+      },
+      {
+        "step": 3,
+        "title": "إدخال بيانات الحاضن أو الوصي وإرفاق الوثائق",
+        "description": "سجّل بيانات الشخص القائم على رعاية الطفل حالياً وأرقام التواصل الفعالة والوثائق المتاحة ثم اضغط إرسال."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من كتابة رقم هاتف فعال ورقم واتساب يعمل باستمرار ليتمكن فريق التحقق في المؤسسة من التواصل مع الوصي.",
+      "يرجى تحري الدقة الكاملة في تدوين حالة الطفل لتسريع إجراءات الاعتماد والكفالة."
+    ],
+    "officialUrl": "https://reacheducationfund.com/reg-sole-survivors/",
+    "contactInfo": "البوابة الرسمية لصندوق ريتش التعليمي: reacheducationfund.com",
+    "warningNote": "تنبيه: التسجيل في برنامج الناجي الوحيد مجاني وإنساني بحت، ولا يتطلب دفع أي رسوم لأي وسيط.",
+    "faqs": [
+      {
+        "question": "من هم الأطفال المشمولون في برنامج الناجي الوحيد؟",
+        "answer": "الأطفال واليافعون في قطاع غزة الذين فقدوا والديهم وأفراد أسرهم المباشرين جراء الأحداث وأصبحوا بحاجة لرعاية وكفالة شاملة."
+      },
+      {
+        "question": "من يقوم بتعبئة الاستمارة نيابة عن الطفل الصغير؟",
+        "answer": "يقوم بتعبئتها الوصي الشرعي أو القريب الحاضن للطفل (مثل الجد، الجدة، العم، الخال، أو العمة/الخالة) مع تدوين بيانات التواصل الخاصة به."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "noor-alhayat-women-child-foundation-gaza",
+    "shortName": "مؤسسة نور الحياة للمرأة والطفل",
+    "englishName": "Noor Al-Hayat Foundation for Women & Child",
+    "title": "رابط التسجيل في مؤسسة نور الحياة للمرأة والطفل للمساعدات والرعاية - قطاع غزة",
+    "organization": "مؤسسة نور الحياة للمرأة والطفل",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "دعم المرأة والطفل",
+      "نور الحياة"
+    ],
+    "aidValue": "طرود صحية وغذائية ورعاية للنساء والأطفال",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "النساء المعيلات للأسر، الأرامل، الحوامل والمرضعات، والأسر التي تضم أطفالاً وأيتاماً في قطاع غزة",
+    "summary": "البوابة الإلكترونية الرسمية لتسجيل النساء والأطفال للاستفادة من المساعدات الإغاثية والصحية لمؤسسة نور الحياة",
+    "detailedExplanation": "تتيح مؤسسة نور الحياة للمرأة والطفل استمارة التسجيل الإلكترونية الرسمية لحصر بيانات النساء والأمهات والأطفال في محافظات قطاع غزة، وذلك للاستفادة من برامج المؤسسة الإغاثية والتنموية التي تشمل توزيع الحقائب الصحية للنساء، مستلزمات وحفاضات وحليب الأطفال، الطرود الغذائية، وبرامج الدعم النفسي والاجتماعي للنساء النازحات والمعيلات لأسرهن.",
+    "requirements": [
+      "رقم الهوية الشخصية للمستفيدة أو رب الأسرة (9 أرقام).",
+      "بيانات الحالة الاجتماعية (أرملة، معيلة لأسرة، زوجة جريح/مفقود، حامل أو مرضع).",
+      "عدد الأطفال في الأسرة وأعمارهم واحتياجاتهم الخاصة.",
+      "تحديد مكان النزوح أو السكن الحالي ورقم هاتف محمول فعال للتواصل."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى رابط التسجيل في مؤسسة نور الحياة",
+        "description": "اضغط على زر التسجيل المباشر لفتح واجهة استمارة التسجيل الإلكترونية المعتمدة."
+      },
+      {
+        "step": 2,
+        "title": "تعبئة بيانات المرأة والأسرة والأطفال",
+        "description": "أدخلي الاسم الرباعي، رقم الهوية، الحالة الاجتماعية، وعدد الأطفال دون سن 18 عاماً."
+      },
+      {
+        "step": 3,
+        "title": "تحديد عنوان التواجد الحالي وإرسال الاستمارة",
+        "description": "اختاري المحافظة ومنطقة النزوح الحالية واكتبي رقم الجوال الفعال ثم اضغطي على زر التسجيل وانتظري رسالة التأكيد."
+      }
+    ],
+    "troubleshooting": [
+      "نظراً لأن الاستمارة تعمل عبر تطبيق Google Script، انتظري بضع ثوانٍ حتى تفتح الصفحة بالكامل وتجنبي الضغط المتكرر على زر الإرسال.",
+      "تأكدي من إدخال رقم الهوية (9 أرقام) ورقم الجوال بالأرقام الإنجليزية."
+    ],
+    "officialUrl": "https://script.google.com/macros/s/AKfycbxPC629Mx2e080Dzbai2pds4-SE46wmgsIsPc5_LrP5KRhYHvoetOlG1Oi9DrUafM2pzg/exec?page=register",
+    "contactInfo": "منصة التسجيل الإلكترونية - مؤسسة نور الحياة للمرأة والطفل",
+    "warningNote": "تنبيه: التسجيل في برامج مؤسسة نور الحياة للمرأة والطفل مجاني بالكامل ويهدف لدعم الأمهات والأطفال في قطاع غزة.",
+    "faqs": [
+      {
+        "question": "من هن الفئات ذات الأولوية في مؤسسة نور الحياة للمرأة والطفل؟",
+        "answer": "تُعطى الأولوية للنساء الأرامل، زوجات الشهداء والجرحى، النساء المعيلات لأسرهن، والأمهات الحوامل والمرضعات والحاضنات لأطفال رضع أو أيتام."
+      },
+      {
+        "question": "كيف يتم التواصل مع المستفيدات بعد التسجيل؟",
+        "answer": "يتم إرسال رسائل نصية (SMS) أو التواصل هاتفياً مع الأسماء المرشحة لإبلاغهن بموعد ومكان استلام الطرود أو الكفالات."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "egyptian-committee-aid-gaza",
+    "shortName": "التسجيل في اللجنة المصرية",
+    "englishName": "Egyptian Relief Committee - Gaza",
+    "title": "التسجيل في اللجنة المصرية للمساعدات الإغاثية والإنسانية في قطاع غزة",
+    "organization": "اللجنة المصرية لإغاثة أهالي قطاع غزة",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "اللجنة المصرية",
+      "طرود وخيام وإغاثة"
+    ],
+    "aidValue": "طرود غذائية + مستلزمات إيواء",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر النازحة والمتضررة في المخيمات ومراكز الإيواء وجميع محافظات قطاع غزة",
+    "summary": "النموذج الرسمي لتسجيل بيانات الأسر للاستفادة من المساعدات الغذائية والإغاثية المقدمة من اللجنة المصرية",
+    "detailedExplanation": "أطلقت اللجنة المصرية العاملة في قطاع غزة استمارة التسجيل وتحديث البيانات الإلكترونية (egycom.org) لحصر الأسر النازحة والمتضررة في مختلف محافظات القطاع، بهدف تنظيم توزيع المساعدات الإغاثية العاجلة التي تشمل الكراتين والطرود الغذائية، الدقيق، الخيام ومستلزمات الإيواء، وحملات الإطعام الميدانية في المخيمات والتجمعات السكنية.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة والزوجة (9 أرقام صحيحة).",
+      "تحديد عدد أفراد الأسرة ومكان التواجد أو مخيم النزوح الحالي بدقة.",
+      "رقم هاتف محمول فعال لاستقبال رسائل ومواعيد الاستلام."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى رابط اللجنة المصرية الرسمي",
+        "description": "افتح الرابط الرسمي المعتمد (egycom.org/aid/data_form) عبر المتصفح."
+      },
+      {
+        "step": 2,
+        "title": "تعبئة بيانات رب الأسرة وأفراد العائلة",
+        "description": "أدخل الاسم الرباعي، رقم الهوية، الحالة الاجتماعية، وعدد الأفراد المعالين."
+      },
+      {
+        "step": 3,
+        "title": "تحديد عنوان النزوح الحالي وإرسال الطلب",
+        "description": "اختر المحافظة والمنطقة أو المخيم الحالي ورقم الجوال ثم اضغط حفظ وإرسال."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من إدخال أرقام الهوية والجوال بالأرقام الإنجليزية (0-9) لقبول الاستمارة فوراً.",
+      "يكفي التسجيل مرة واحدة لكل أسرة وعدم تكرار الطلب."
+    ],
+    "officialUrl": "https://egycom.org/aid/data_form",
+    "contactInfo": "البوابة الإلكترونية الرسمية للجنة المصرية: egycom.org",
+    "warningNote": "تنبيه: التسجيل في مساعدات اللجنة المصرية مجاني 100% ولا يتم عبر أي وسطاء أو مقابل مالي.",
+    "faqs": [
+      {
+        "question": "كيف يتم إبلاغ الأسرة بموعد استلام طرد اللجنة المصرية؟",
+        "answer": "يتم إرسال رسائل نصية (SMS) أو التنسيق عبر مندوبي المخيمات ونقاط التوزيع المعتمدة للجنة المصرية."
+      },
+      {
+        "question": "هل يمكن تحديث العنوان عند الانتقال لمحافظة أخرى؟",
+        "answer": "نعم، تتيح البوابة تحديث مكان التواجد الحالي لضمان إدراج الأسرة في كشوفات المحافظة الجديدة."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "alaseel-charity-aid-registration",
+    "shortName": "جمعية أصيل للتنمية الخيرية",
+    "englishName": "Al-Aseel Charity Association",
+    "title": "التسجيل في جمعية أصيل للتنمية الخيرية للمساعدات الإغاثية - قطاع غزة",
+    "organization": "جمعية أصيل للتنمية الخيرية",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "جمعية أصيل",
+      "مساعدات خيرية"
+    ],
+    "aidValue": "طرود غذائية ومساعدات أسرية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المتضررة والنازحة والأسر المتعففة وأسر الأيتام والجرحى في قطاع غزة",
+    "summary": "نموذج التسجيل الإلكتروني لبيانات الأسر للاستفادة من برامج ومشاريع جمعية أصيل للتنمية الخيرية",
+    "detailedExplanation": "تتيح جمعية أصيل للتنمية الخيرية عبر منصتها الإلكترونية استمارة تسجيل الأسر المتضررة والنازحة في قطاع غزة، وذلك لقاعدة بيانات المستفيدين من المشاريع الخيرية والإغاثية التي تنفذها الجمعية، والتي تتضمن توزيع السلال الغذائية، سلال الخضار، المياه الصحية، وكفالات الأسر المتعففة.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة والزوجة.",
+      "بيانات عدد أفراد الأسرة والحالة الاجتماعية والصحية.",
+      "عنوان السكن أو النزوح الحالي ورقم جوال فعال للتواصل."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح رابط التسجيل في جمعية أصيل",
+        "description": "اضغط على زر التسجيل المباشر لفتح صفحة التسجيل المعتمدة."
+      },
+      {
+        "step": 2,
+        "title": "إدخال البيانات الأساسية للأسرة",
+        "description": "املأ حقول الاسم الرباعي، رقم الهوية، عدد الأفراد، وحالة السكن."
+      },
+      {
+        "step": 3,
+        "title": "إرسال الطلب وحفظ التأكيد",
+        "description": "تأكد من صحة رقم الهاتف واضغط على زر التسجيل لإدراج بياناتك."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من تعبئة كافة الحقول المطلوبة المعلمة بنجمة حمراء قبل الضغط على إرسال."
+    ],
+    "officialUrl": "https://alaseel-aid-tracker.lovable.app/register.html",
+    "contactInfo": "منصة تسجيل المستفيدين - جمعية أصيل للتنمية الخيرية",
+    "warningNote": "تنبيه: التسجيل مجاني بالكامل ويخضع لمعايير البحث الاجتماعي والأولوية الإنسانية.",
+    "faqs": [
+      {
+        "question": "ما هي الفئات ذات الأولوية في مشاريع جمعية أصيل؟",
+        "answer": "تُمنح الأولوية للأسر النازحة عديمة الدخل، أسر الأيتام، الأسر التي ترأسها نساء، وأسر الجرحى وذوي الإعاقة."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "gaza-martyrs-search-by-name",
+    "shortName": "ابحث بالاسم عن شهداء قطاع غزة",
+    "englishName": "Gaza Martyrs Name Search",
+    "title": "بوابة البحث بالاسم والاستعلام عن شهداء قطاع غزة الموثقين",
+    "organization": "السجل التوثيقي لشهداء قطاع غزة",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "بحث بالاسم",
+      "سجل الشهداء"
+    ],
+    "aidValue": "استعلام وتوثيق رسمي بالاسم والهوية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "ذوو وعائلات الشهداء والمفقودين في كافة محافظات قطاع غزة",
+    "summary": "خدمة البحث والاستعلام الإلكتروني بالاسم أو رقم الهوية في قوائم وسجلات شهداء قطاع غزة",
+    "detailedExplanation": "تتيح هذه البوابة التوثيقية للمواطنين وذوي الشهداء في قطاع غزة إمكانية البحث السريع بالاسم أو رقم الهوية للتحقق من إدراج وتوثيق بيانات الشهداء في السجلات المعتمدة، مما يساعد العائلات في استكمال إجراءات التوثيق الرسمي واستخراج الوثائق اللازمة لحفظ حقوق أسر وأيتام الشهداء.",
+    "requirements": [
+      "الاسم الثنائي أو الرباعي للشهيد، أو رقم الهوية الشخصية (9 أرقام)."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى صفحة البحث",
+        "description": "افتح الرابط المخصص للبحث عن أسماء الشهداء."
+      },
+      {
+        "step": 2,
+        "title": "كتابة الاسم أو رقم الهوية في مربع البحث",
+        "description": "أدخل اسم الشهيد أو رقم هويته واضغط بحث لعرض البيانات المسجلة."
+      },
+      {
+        "step": 3,
+        "title": "مراجعة البيانات التوثيقية",
+        "description": "تحقق من تطابق الاسم الرباعي وتاريخ الاستشهاد ورقم الهوية."
+      }
+    ],
+    "troubleshooting": [
+      "جرّب البحث بالاسم الأول واسم العائلة بدون همزات في حال لم يظهر الاسم من المحاولة الأولى."
+    ],
+    "officialUrl": "https://ww38.lvendr.xyz/t/gaza-martyrs/",
+    "contactInfo": "اللجان الطبية والتوثيقية المختصة في وزارة الصحة",
+    "warningNote": "تنبيه: في حال عدم وجود اسم الشهيد في القوائم المحدثة، يرجى مراجعة مكاتب التبليغ والتوثيق في المستشفيات المعتمدة.",
+    "faqs": [
+      {
+        "question": "كيف يمكن إضافة شهيد غير مدرج في القوائم الإلكترونية؟",
+        "answer": "يتم ذلك عبر نماذج التبليغ الرسمية لوزارة الصحة واللجان القضائية والطبية في المستشفيات مع إرفاق إشعار الوفاة أو إفادات الشهود."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "jobmatch-temporary-employment-gaza",
+    "shortName": "فرص العمل المؤقتة (جوب ماتش)",
+    "englishName": "JobMatch Palestine - Cash for Work",
+    "title": "التسجيل في فرص العمل المؤقتة والتشغيل الطارئ عبر منصة (جوب ماتش - JobMatch)",
+    "organization": "منصة جوب ماتش (JobMatch) وصندوق التشغيل الفلسطيني",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "تشغيل مؤقت",
+      "جوب ماتش"
+    ],
+    "aidValue": "فرص عمل ومكافأة شهرية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الخريجون الجامعيون، حاملو الدبلوم، الفنيون، والعمال المهرة وغير المهرة في قطاع غزة",
+    "summary": "البوابة الرسمية للتسجيل والتقديم على فرص العمل المؤقتة ومشاريع التشغيل الطارئ في قطاع غزة",
+    "detailedExplanation": "تُعد منصة جوب ماتش (JobMatch.ps) البوابة الإلكترونية المعتمدة لتشبيك الباحثين عن عمل من الخريجين والمهنيين والعمال في قطاع غزة مع مشاريع التشغيل المؤقت (Cash for Work) والوظائف الطارئة الممولة من المؤسسات الدولية والمانحة في قطاعات التعليم المساند، الصحة، الدعم النفسي، إدارة مراكز الإيواء، والخدمات البلدية والمجتمعية.",
+    "requirements": [
+      "بطاقة الهوية الشخصية (9 أرقام).",
+      "بيانات المؤهل العلمي أو المهني والخبرات السابقة إن وُجدت.",
+      "بريد إلكتروني ورقم هاتف محمول فعال لاستقبال رسائل الترشيح والمقابلات.",
+      "تحديد مكان الإقامة أو النزوح الحالي بدقة."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى موقع جوب ماتش الرسمي (jobmatch.ps)",
+        "description": "افتح الرابط الرسمي وأنشئ حساب باحث عن عمل أو سجل دخولك لحسابك الحالي."
+      },
+      {
+        "step": 2,
+        "title": "استكمال الملف الشخصي والسيرة الذاتية",
+        "description": "أدخل بياناتك الشخصية، مؤهلك العلمي، المهارات، والمحافظة المتواجد فيها حالياً."
+      },
+      {
+        "step": 3,
+        "title": "التقديم على الشواغر ومشاريع التشغيل المتاحة",
+        "description": "تصفح فرص العمل المعلنة واضغط على 'تقديم طلب' للفرص المناسبة لتخصصك ومنطقتك."
+      }
+    ],
+    "troubleshooting": [
+      "احرص على تحديث عنوان تواجدك الحالي ورقم جوالك داخل ملفك الشخصي ليتم ترشيحك للمشاريع القريبة منك."
+    ],
+    "officialUrl": "https://jobmatch.ps/",
+    "contactInfo": "البوابة الإلكترونية الرسمية لمنصة جوب ماتش: jobmatch.ps",
+    "warningNote": "تنبيه: التسجيل والتقديم على كافة الوظائف وفرص التشغيل عبر جوب ماتش مجاني تماماً ويخضع لمعايير مفاضلة شفافة.",
+    "faqs": [
+      {
+        "question": "هل التسجيل في جوب ماتش متاح للعمال غير الخريجين؟",
+        "answer": "نعم، تطرح المنصة والمؤسسات الشريكة مشاريع تشغيل متنوعة تشمل الخريجين والفنيين والعمال في مختلف المجالات الإغاثية والخدمية."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "albaraka-algeria-beneficiary-check-gaza",
+    "shortName": "فحص المستفيدين (جمعية البركة الجزائرية)",
+    "englishName": "Al-Baraka Algerian Association Check",
+    "title": "رابط فحص أسماء المستفيدين في جمعية البركة الجزائرية - قطاع غزة",
+    "organization": "جمعية البركة للعمل الخيري والإنساني (الجزائرية)",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "فحص المستفيدين",
+      "جمعية البركة"
+    ],
+    "aidValue": "طرود غذائية ومساعدات وكفالات",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المسجلة في قوائم المساعدات والكفالات لدى جمعية البركة الجزائرية في قطاع غزة",
+    "summary": "بوابة الاستعلام الإلكتروني برقم الهوية لفحص استحقاق المساعدات والطرود من جمعية البركة الجزائرية",
+    "detailedExplanation": "وفرت جمعية البركة الجزائرية للعمل الخيري والإنساني في قطاع غزة رابط الفحص والاستعلام الإلكتروني (albaraka-gaza.org/check) لتمكين المواطنين والأسر المسجلة من التحقق من شمول أسمائهم في دورات توزيع الطرود الغذائية، الكفالات المالية، لحوم الأضاحي، والمشاريع الإغاثية الموسمية، ومعرفة نقطة وموعد الاستلام المحدد لكل أسرة.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة أو المستفيد (9 أرقام).",
+      "إحضار بطاقة الهوية الأصلية عند التوجه لنقطة التوزيع في حال ظهور اسمك في الكشف."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح صفحة فحص المستفيدين الرسمية",
+        "description": "انتقل إلى رابط الفحص الرسمي لجمعية البركة الجزائرية (albaraka-gaza.org/check)."
+      },
+      {
+        "step": 2,
+        "title": "إدخال رقم الهوية الشخصية",
+        "description": "اكتب رقم الهوية المكون من 9 أرقام باللغة الإنجليزية في الحقل المخصص واضغط على زر 'فحص'."
+      },
+      {
+        "step": 3,
+        "title": "مراجعة نتيجة الفحص ومكان الاستلام",
+        "description": "ستظهر لك حالة الاستحقاق ونوع المساعدة وموعد وعنوان نقطة التسليم المعتمدة."
+      }
+    ],
+    "troubleshooting": [
+      "إذا لم يظهر اسمك في الدورة الحالية، فهذا يعني أن اسمك قيد الانتظار للدورات القادمة حسب توفر القوافل الإغاثية."
+    ],
+    "officialUrl": "https://albaraka-gaza.org/check",
+    "contactInfo": "البوابة الرسمية لجمعية البركة الجزائرية في غزة: albaraka-gaza.org",
+    "warningNote": "تنبيه: جميع مساعدات وكفالات جمعية البركة الجزائرية تُسلم لمستحقيها مجاناً وبموجب الهوية الأصلية.",
+    "faqs": [
+      {
+        "question": "متى يتم تحديث كشوفات المستفيدين على رابط الفحص؟",
+        "answer": "يتم تحديث قوائم الفحص دورياً بالتزامن مع انطلاق كل حملة توزيع جديدة في محافظات قطاع غزة."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "egaza-cooking-gas-lists-check",
+    "shortName": "فحص الاسم في كشوفات الغاز",
+    "englishName": "Gaza Cooking Gas Distribution Check",
+    "title": "رابط فحص الاسم برقم الهوية في كشوفات توزيع غاز الطهي - قطاع غزة",
+    "organization": "الهيئة العامة للبترول / بوابة فحص الغاز (e-gaza)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "كشوفات الغاز",
+      "فحص بالهوية"
+    ],
+    "aidValue": "تعبئة أسطوانة غاز طهي بسعر رسمي",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "جميع الأسر والمواطنين المسجلين في منظومة توزيع غاز الطهي المنزلي في محافظات قطاع غزة",
+    "summary": "الاستعلام الإلكتروني الفوري برقم الهوية عن دور الأسرة في كشوفات تعبئة وتوزيع غاز الطهي والموزع المعتمد",
+    "detailedExplanation": "تتيح بوابة الفحص الإلكترونية (e-gaza.com/check) للمواطنين وأرباب الأسر في قطاع غزة الاستعلام المباشر برقم الهوية عن إدراج أسمائهم في الكشوفات الدورية الصادرة لتعبئة أسطوانات غاز الطهي المنزلي، ومعرفة اسم الموزع أو المحطة المعتمدة وتاريخ تسليم الأسطوانة وفق التسعيرة الرسمية المعتمدة.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة المسجل (9 أرقام).",
+      "إحضار الهوية الأصلية وأسطوانة الغاز عند التوجه للموزع المعتمد المذكور في نتيجة الفحص."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى رابط فحص كشوفات الغاز",
+        "description": "افتح الرابط المعتمد للفحص (e-gaza.com/check)."
+      },
+      {
+        "step": 2,
+        "title": "كتابة رقم الهوية والضغط على بحث",
+        "description": "أدخل رقم هوية رب الأسرة المكون من 9 خانات واضغط على زر الفحص."
+      },
+      {
+        "step": 3,
+        "title": "معرفة اسم الموزع ورقم الكشف",
+        "description": "تأكد من تاريخ الكشف واسم موزع الغاز المعتمد في منطقتك وتوجه لتسليم الأسطوانة."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من تحديث عنوان نزوحك لدى لجان الأحياء أو البوابة الإلكترونية لضمان نزول اسمك لدى موزع في محافظتك الحالية."
+    ],
+    "officialUrl": "https://e-gaza.com/check",
+    "contactInfo": "لجان متابعة توزيع الغاز والهيئة العامة للبترول",
+    "warningNote": "تنبيه: التزم بالتسعيرة الرسمية المعلنة لتعبئة الغاز ولا تدفع أي مبالغ إضافية خارج التسعيرة المعتمدة.",
+    "faqs": [
+      {
+        "question": "كم تستغرق دورة تعبئة أسطوانة الغاز بعد نزول الاسم في الكشف؟",
+        "answer": "عادة ما تستغرق من 48 إلى 72 ساعة من تاريخ تسليم الأسطوانة للموزع المعتمد في منطقتك."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "save-the-children-cash-assistance-kobo",
+    "shortName": "تسجيل مساعدة نقدية (إنقاذ الطفل)",
+    "englishName": "Save the Children Cash Assistance Form",
+    "title": "رابط تسجيل المساعدات النقدية الطارئة في منظمة إنقاذ الطفل (Save the Children)",
+    "organization": "منظمة إنقاذ الطفل الدولية (Save the Children)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "مساعدة نقدية",
+      "إنقاذ الطفل"
+    ],
+    "aidValue": "حوالة نقدية للأسر المستحقة",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المتضررة والنازحة التي تضم أطفالاً، نساء حوامل أو مرضعات، أو ذوي إعاقة في قطاع غزة",
+    "summary": "النموذج الإلكتروني المعتمد على منصة Kobo للتسجيل في برنامج المساعدات النقدية لمنظمة إنقاذ الطفل",
+    "detailedExplanation": "أتاحت منظمة إنقاذ الطفل الدولية (Save the Children) استمارة التسجيل الإلكترونية الرسمية عبر نظام (KoboToolbox) لتمكين الأسر المتضررة والنازحة في قطاع غزة من تقديم طلبات الاستفادة من برنامج التحويلات النقدية الطارئة متعددة الأغراض والمساعدات المخصصة لدعم الأطفال والأمهات والأسر الأكثر هشاشة.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة والزوج/الزوجة (9 أرقام).",
+      "بيانات الأطفال المعالين دون سن 18 عاماً وحالتهم الصحية والتغذوية.",
+      "رقم جوال فعال (جوال أو أوريدو) مفتوح لاستقبال رسائل نصية وإشعارات الصرف.",
+      "تحديد دقيق لمحافظة ومنطقة النزوح أو السكن الحالي."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح استمارة التسجيل الرسمية (Kobo)",
+        "description": "انتقل إلى رابط النموذج المعتمد (kobo-ee.savethechildren.net/x/eQOeVYsP)."
+      },
+      {
+        "step": 2,
+        "title": "الموافقة على إشعار الخصوصية وتعبئة بيانات الأسرة",
+        "description": "اقرأ إشعار الموافقة المستنيرة ثم أدخل بيانات رب الأسرة، رقم الهوية، وعدد الأطفال."
+      },
+      {
+        "step": 3,
+        "title": "تحديد معايير الهشاشة وإرسال الطلب",
+        "description": "حدد إن كان بالأسرة أطفال رضع، حوامل، ذوي إعاقة، أو أيتام، ثم اضغط إرسال (Submit) مرة واحدة."
+      }
+    ],
+    "troubleshooting": [
+      "انتظر حتى تظهر رسالة تأكيد استلام الطلب باللون الأخضر، ولا تقم بإرسال الاستمارة أكثر من مرة لنفس رقم الهوية."
+    ],
+    "officialUrl": "https://kobo-ee.savethechildren.net/x/eQOeVYsP",
+    "contactInfo": "الخط المجاني لمنظمة إنقاذ الطفل في فلسطين: 1800222444",
+    "warningNote": "تنبيه: التسجيل مجاني 100% ولا تطلب المنظمة أي مبالغ مالية أو كلمات مرور لمحفظتك الإلكترونية.",
+    "faqs": [
+      {
+        "question": "كيف يتم إبلاغ الأسر المقبولة في المساعدة النقدية؟",
+        "answer": "يتم التواصل مع الأسر المستوفية لمعايير الأولوية عبر رسالة نصية رسمية (SMS) توضح آلية وموعد استلام الدفعة النقدية."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "unrwa-gaza-aid-login-update",
+    "shortName": "تحديث البيانات (الأونروا)",
+    "englishName": "UNRWA Gaza Aid Portal (Login/Update)",
+    "title": "بوابة تحديث البيانات وفحص المساعدات في وكالة الغوث (الأونروا - UNRWA)",
+    "organization": "وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين (UNRWA)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "تحديث الأونروا",
+      "كابونة والطحين"
+    ],
+    "aidValue": "حصص الدقيق + الطرود الغذائية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "جميع الأسر اللاجئة والمواطنين المسجلين في منظومة مساعدات الأونروا في قطاع غزة",
+    "summary": "البوابة الرسمية لوكالة الغوث في غزة لتسجيل الدخول وتحديث عنوان النزوح ورقم الهاتف وفحص استلام الطحين",
+    "detailedExplanation": "تُعد بوابة مساعدات الأونروا الإلكترونية في قطاع غزة (gazaaid.unrwa.org) المنصة الرسمية المعتمدة لتمكين أرباب الأسر من تحديث مكان تواجدهم الحالي عند النزوح من محافظة لأخرى، وتعديل رقم الهاتف المحمول، والاستعلام المباشر برقم الهوية عن مواعيد ومراكز تسليم حصص الدقيق (الطحين) والطرود الغذائية.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة (9 أرقام).",
+      "رقم بطاقة التسجيل العائلي (كرت الوكالة) أو تاريخ الميلاد للتحقق.",
+      "رقم الجوال الفعال لتلقي رسائل التحقق وإشعارات الاستلام."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى بوابة مساعدات الأونروا (gazaaid.unrwa.org)",
+        "description": "اضغط على زر التسجيل المباشر لفتح صفحة الدخول الرسمية."
+      },
+      {
+        "step": 2,
+        "title": "إدخال رقم الهوية وبيانات التحقق",
+        "description": "أدخل رقم هوية رب الأسرة وتاريخ الميلاد أو رقم كرت المؤن لتسجيل الدخول."
+      },
+      {
+        "step": 3,
+        "title": "تحديث عنوان الإقامة/النزوح ورقم الجوال",
+        "description": "عدّل المحافظة والحي الحالي وأقرب مركز توزيع، ثم احفظ التعديلات وراجع حالة استحقاقك."
+      }
+    ],
+    "troubleshooting": [
+      "في حال ضغط الزوار على البوابة، حاول الدخول في ساعات الصباح الباكر وتجنب تحديث الصفحة المتكرر."
+    ],
+    "officialUrl": "https://gazaaid.unrwa.org/Login/Index",
+    "contactInfo": "الخط المجاني الموحد لوكالة الغوث (الأونروا) في غزة: 1800444666",
+    "warningNote": "تنبيه: خدمات الأونروا الإلكترونية والتوزيع الميداني مجانية بالكامل ولا تتطلب أي وسطاء.",
+    "faqs": [
+      {
+        "question": "لماذا يجب عليّ تحديث عنواني في بوابة الأونروا عند النزوح؟",
+        "answer": "لضمان نقل مخصصات أسرتك من الدقيق والطرود الغذائية إلى مركز التوزيع الأقرب لمكان نزوحك الجديد."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "egaza-citizen-services-mosd-update",
+    "shortName": "تحديث البيانات في وزارة التنمية (غزة)",
+    "englishName": "MoSD Gaza Citizen Services Portal",
+    "title": "بوابة خدمات الجمهور وتحديث بيانات المواطنين في وزارة التنمية الاجتماعية (غزة)",
+    "organization": "وزارة التنمية الاجتماعية - بوابة خدمات المواطن (غزة)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "تنمية غزة",
+      "خدمات المواطن"
+    ],
+    "aidValue": "إدراج في قوائم المساعدات الإغاثية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "جميع الأسر المقيمة والنازحة والمتضررة في محافظات قطاع غزة",
+    "summary": "البوابة الإلكترونية لتسجيل الدخول وتحديث بيانات الأسرة وعنوان النزوح في وزارة التنمية الاجتماعية بغزة",
+    "detailedExplanation": "تتيح بوابة خدمات المواطن الإلكترونية (services.citizen.egaza.ps) للمواطنين وأرباب الأسر في قطاع غزة تسجيل الدخول وتحديث بياناتهم الأسرية، عنوان النزوح الحالي، رقم الجوال الفعال، وحالة تضرر المسكن، ليتم اعتمادها في قوائم التوزيع الإغاثي والطرود الغذائية والمساعدات الطارئة التي تشرف عليها الوزارة واللجان الشريكة.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة (9 أرقام).",
+      "كلمة المرور الخاصة بحساب المواطن أو استعادتها عبر بيانات التحقق.",
+      "رقم جوال فعال وتحديد دقيق لعنوان السكن أو مركز الإيواء الحالي."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح بوابة خدمات المواطن الإلكترونية",
+        "description": "انتقل إلى رابط تسجيل الدخول الرسمي (services.citizen.egaza.ps/login)."
+      },
+      {
+        "step": 2,
+        "title": "تسجيل الدخول برقم الهوية",
+        "description": "أدخل رقم الهوية وكلمة المرور (أو أنشئ حساباً جديداً إذا لم يسبق لك التسجيل)."
+      },
+      {
+        "step": 3,
+        "title": "تحديث بيانات الأسرة ومكان النزوح",
+        "description": "راجع بيانات أفراد الأسرة وعدّل عنوان التواجد الحالي ورقم الجوال ثم اضغط حفظ."
+      }
+    ],
+    "troubleshooting": [
+      "إذا نسيت كلمة المرور، اضغط على خيار (نسيت كلمة المرور) وأدخل البيانات الشخصية المطلوبة لاستعادتها."
+    ],
+    "officialUrl": "https://services.citizen.egaza.ps/login",
+    "contactInfo": "بوابة خدمات المواطن الإلكترونية - قطاع غزة",
+    "warningNote": "تنبيه: احرص على عدم مشاركة كلمة مرور حسابك الشخصي في البوابة مع أي شخص غريب.",
+    "faqs": [
+      {
+        "question": "متى يجب عليّ الدخول لتحديث بياناتي في البوابة؟",
+        "answer": "عند كل تغيير في مكان النزوح أو تغير رقم الهاتف المحمول أو إضافة مولود جديد للأسرة."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "mosd-ramallah-1250-ils-war-form",
+    "shortName": "التسجيل في رابط الـ 1250 شيكل (التنمية رام الله)",
+    "englishName": "MoSD War Form - Cash & Relief Aid",
+    "title": "رابط التسجيل وتحديث البيانات في استمارة وزارة التنمية الاجتماعية (رام الله) - المساعدات النقدية",
+    "organization": "وزارة التنمية الاجتماعية الفلسطينية (رام الله)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "استمارة التنمية",
+      "مساعدات النقدية"
+    ],
+    "aidValue": "مساعدات نقدية وإغاثية (دفعات طارئة)",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المتضررة والنازحة وفاقدو الدخل وأسر الجرحى والشهداء وذوو الإعاقة في قطاع غزة",
+    "summary": "الاستمارة الرسمية لوزارة التنمية الاجتماعية (رام الله) لحصر الأسر المتضررة والترشيح للمساعدات النقدية",
+    "detailedExplanation": "تُعد استمارة حصر الأضرار والاحتياجات الطارئة التابعة لوزارة التنمية الاجتماعية في رام الله (donate.mosd.gov.ps/war-form) البوابة المركزية المعتمدة لترشيح الأسر في قطاع غزة للاستفادة من الدفعات النقدية الطارئة (مثل دفعات الـ 1000 والـ 1250 شيكل المقدمة بالتعاون مع اليونيسف، البنك الدولي، والاتحاد الأوروبي). يتوجب على كل أسرة التأكد من تسجيل وتحديث بياناتها في هذه الاستمارة.",
+    "requirements": [
+      "بطاقة الهوية الشخصية لرب الأسرة والزوج/الزوجة وجميع الأبناء.",
+      "رقم هاتف محمول فعال (جوال أو أوريدو) مسجل باسم رب الأسرة أو الزوجة.",
+      "بيانات حالة المسكن الأصلي وعنوان النزوح الحالي بالتفصيل.",
+      "بيانات الحالات الصحية أو الإعاقة أو فقدان المعيل إن وُجدت."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح رابط استمارة وزارة التنمية الرسمية",
+        "description": "انتقل إلى الرابط الرسمي (donate.mosd.gov.ps/war-form)."
+      },
+      {
+        "step": 2,
+        "title": "إدخال رقم الهوية وتاريخ الميلاد للتحقق",
+        "description": "أدخل رقم هوية رب الأسرة وتاريخ الميلاد لفتح الاستمارة واسترجاع بيانات السجل المدني."
+      },
+      {
+        "step": 3,
+        "title": "استكمال بيانات النزوح والضرر ورقم الهاتف",
+        "description": "املأ كافة الحقول المطلوبة بدقة ثم اضغط على حفظ البيانات وتأكد من ظهور إشعار النجاح."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من كتابة رقم الجوال الفعال المربوط بمحفظة إلكترونية (أو القابل للتفعيل) لاستلام أكواد الصرف عليه."
+    ],
+    "officialUrl": "https://donate.mosd.gov.ps/war-form?fbclid=IwY2xjawGultJleHRuA2FlbQIxMAABHWn2lRGY17H4PRUOp3r9M0PqrEL7N8idhCdltASSH_a-zPpaQLuHo39TeA_aem_YHufbkDonYxmcZv6LmyEJQ",
+    "contactInfo": "البوابة الرسمية لوزارة التنمية الاجتماعية الفلسطينية: mosd.gov.ps",
+    "warningNote": "تنبيه: التسجيل في استمارة وزارة التنمية مجاني تماماً ولا يعتمد أي وسطاء.",
+    "faqs": [
+      {
+        "question": "هل التسجيل في هذا الرابط يرشح الأسرة لمساعدات اليونيسف والبنك الدولي؟",
+        "answer": "نعم، هذا السجل هو المصدر الأساسي الذي تسحب منه المنظمات الدولية قوائم المستفيدين من المساعدات النقدية."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "wfp-pal-beneficiary-registration-cbt",
+    "shortName": "التسجيل في برنامج الغذاء العالمي (WFP)",
+    "englishName": "WFP Beneficiary Registration Portal",
+    "title": "الرابط المباشر للتسجيل وتحديث البيانات في برنامج الأغذية العالمي (WFP) - فلسطين",
+    "organization": "برنامج الأغذية العالمي للأمم المتحدة (WFP)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "تسجيل WFP",
+      "طرود وأكواد غذائية"
+    ],
+    "aidValue": "أكواد نقدية + سلة غذائية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "جميع الأسر النازحة والمقيمة في محافظات قطاع غزة الراغبة بالتسجيل أو تعديل عنوان استلام المساعدات",
+    "summary": "بوابة التسجيل الذاتي الرسمية المعتمدة من برنامج الأغذية العالمي (WFP) لتسجيل وتحديث بيانات الأسر في غزة",
+    "detailedExplanation": "هذا هو الرابط المباشر والرسمي لبوابة تسجيل المستفيدين التابعة لبرنامج الأغذية العالمي للأمم المتحدة (pal.beneficiaryregistration.cbt.wfp.org/form/landing). يتيح هذا النموذج لأرباب الأسر في قطاع غزة تسجيل أسرهم للمرة الأولى أو تحديث محافظة ومكان النزوح الحالي ورقم الجوال لضمان استلام رسائل الطرود الغذائية، الدقيق، والقسائم الشرائية.",
+    "requirements": [
+      "رقم الهوية الفلسطينية لرب الأسرة والزوجة والأبناء (9 أرقام).",
+      "تواريخ الميلاد الصحيحة لجميع أفراد الأسرة المقيمين معاً.",
+      "رقم جوال فعال (جوال أو أوريدو) يعمل ومفتوح لاستقبال الرسائل النصية (SMS).",
+      "تحديد دقيق للمحافظة الحالية والحي أو مخيم النزوح."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى بوابة التسجيل المباشرة لـ WFP",
+        "description": "افتح الرابط الرسمي (pal.beneficiaryregistration.cbt.wfp.org/form/landing)."
+      },
+      {
+        "step": 2,
+        "title": "إدخال بيانات رب الأسرة وأفراد العائلة",
+        "description": "أدخل الاسم الرباعي ورقم الهوية وتاريخ الميلاد وعدد الأفراد المعالين بدقة."
+      },
+      {
+        "step": 3,
+        "title": "تحديد الموقع الجغرافي الحالي وإرسال الاستمارة",
+        "description": "اختر المحافظة والمنطقة الحالية في قطاع غزة واضغط إرسال واحتفظ بالرقم المرجعي."
+      }
+    ],
+    "troubleshooting": [
+      "إذا ظهر أن رقم الهوية مسجل مسبقاً، استخدم خيار تحديث البيانات لتعديل عنوان النزوح أو رقم الهاتف."
+    ],
+    "officialUrl": "https://pal.beneficiaryregistration.cbt.wfp.org/form/landing",
+    "contactInfo": "الخط المجاني لبرنامج الأغذية العالمي: 1800124126",
+    "warningNote": "تنبيه: هذا هو الرابط الرسمي الوحيد للتسجيل الذاتي في WFP؛ لا تدخل بياناتك في أي روابط مجهولة.",
+    "faqs": [
+      {
+        "question": "هل يجب التسجيل مرة أخرى إذا انتقلت الأسرة لمحافظة جديدة؟",
+        "answer": "لا تقم بتسجيل طلب جديد، بل ادخل لتحديث موقعك الجغرافي الحالي ليتم نقلك لأقرب نقطة توزيع."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "wfp-aid-hotline-contact-palestine",
+    "shortName": "نموذج التواصل مع برنامج الغذاء العالمي (WFP)",
+    "englishName": "WFP Aid Hotline & Feedback Portal",
+    "title": "نموذج التواصل وتقديم الشكاوى وتحديث الهاتف في برنامج الأغذية العالمي (WFP)",
+    "organization": "برنامج الأغذية العالمي للأمم المتحدة (WFP)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "شكاوى وتواصل WFP",
+      "تحديث رقم الجوال"
+    ],
+    "aidValue": "معالجة الطلبات وتحديث بيانات الاتصال",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المسجلة في برنامج الأغذية العالمي التي تواجه مشكلة في استلام الرسائل أو ترغب بتغيير رقم الهاتف أو تقديم شكوى",
+    "summary": "البوابة الرسمية للخط الساخن لبرنامج الغذاء العالمي لتقديم الشكاوى والاستفسارات وطلبات تحديث البيانات",
+    "detailedExplanation": "خصص برنامج الأغذية العالمي (WFP) بوابة التواصل والخط الساخن الإلكترونية (aidhotline.wfp.org/palestine.html) لتمكين الأسر في قطاع غزة من مراسلة فريق خدمة المستفيدين مباشرة في حال تعذر الاتصال الهاتفي، وذلك لحل مشكلات عدم وصول رسائل الاستلام، طلب تغيير رقم الجوال المفقود، أو الإبلاغ عن أي مشكلة في نقاط التوزيع.",
+    "requirements": [
+      "الاسم الرباعي لرب الأسرة ورقم الهوية الشخصية (9 أرقام).",
+      "رقم الهاتف القديم المسجل ورقم الهاتف الجديد الفعال.",
+      "توضيح سبب التواصل أو المشكلة باختصار (تحديث هاتف، استفسار عن طرد، شكوى)."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح صفحة التواصل الرسمية (aidhotline.wfp.org)",
+        "description": "انتقل إلى رابط نموذج التواصل الخاص بفلسطين."
+      },
+      {
+        "step": 2,
+        "title": "تعبئة بيانات المستفيد ورقم الهوية",
+        "description": "أدخل اسمك ورقم هويتك والمحافظة المتواجد فيها حالياً."
+      },
+      {
+        "step": 3,
+        "title": "كتابة تفاصيل الطلب وإرساله",
+        "description": "اشرح طلبك بوضوح (مثل تغيير رقم الجوال أو تأخر الرسالة) واضغط إرسال."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من كتابة رقم الهاتف الجديد بشكل صحيح تماماً حتى يتمكن موظف الدعم من الاتصال بك."
+    ],
+    "officialUrl": "https://aidhotline.wfp.org/palestine.html",
+    "contactInfo": "الخط المجاني: 1800124126 | البوابة الإلكترونية: aidhotline.wfp.org",
+    "warningNote": "تنبيه: فريق دعم WFP لا يطلب منك أبداً دفع أي رسوم لمعالجة طلبك أو تحديث بياناتك.",
+    "faqs": [
+      {
+        "question": "متى أستخدم نموذج التواصل بدلاً من نموذج التسجيل؟",
+        "answer": "يُستخدم نموذج التواصل إذا كنت مسجلاً مسبقاً ولديك مشكلة فنية (مثل فقدان شريحة الجوال أو توقف استلام الرسائل)."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "sehatty-moh-electronic-services-gaza",
+    "shortName": "الخدمات الإلكترونية لوزارة الصحة (صحتي)",
+    "englishName": "Ministry of Health E-Services (Sehatty)",
+    "title": "جميع الخدمات الإلكترونية لوزارة الصحة الفلسطينية في قطاع غزة (منظومة صحتي)",
+    "organization": "وزارة الصحة الفلسطينية - منظومة صحتي الإلكترونية",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "منظومة صحتي",
+      "خدمات وزارة الصحة"
+    ],
+    "aidValue": "تقارير طبية + تحويلات + خدمات صحية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "جميع المواطنين، المرضى، الجرحى، والكوادر الصحية في قطاع غزة",
+    "summary": "البوابة الموحدة لجميع الخدمات الإلكترونية لوزارة الصحة (التقارير الطبية، التحويلات، التبليغ عن الشهداء والجرحى)",
+    "detailedExplanation": "تجمع بوابة الخدمات الإلكترونية لوزارة الصحة (sehatty.ps) كافة النماذج والخدمات الصحية الرقمية المتاحة للمواطنين في قطاع غزة في مكان واحد، بما يشمل: الاستعلام عن التقارير الطبية، متابعة التحويلات المرضية للعلاج بالخارج، نماذج تسجيل وتحديث بيانات الجرحى والمرضى، والتبليغ عن الشهداء والمفقودين.",
+    "requirements": [
+      "رقم الهوية الشخصية للمواطن أو المريض (9 أرقام).",
+      "رقم هاتف فعال مسجل في منظومة صحتي."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى بوابة الخدمات الإلكترونية (sehatty.ps)",
+        "description": "افتح الرابط الرسمي لمنظومة صحتي لاستعراض قائمة الخدمات المتاحة."
+      },
+      {
+        "step": 2,
+        "title": "اختيار الخدمة الصحية المطلوبة",
+        "description": "اضغط على أيقونة الخدمة التي تحتاجها (تسجيل جريح، استعلام عن تحويلة، تقرير طبي، إلخ)."
+      },
+      {
+        "step": 3,
+        "title": "إدخال رقم الهوية وإتمام الإجراء",
+        "description": "أدخل البيانات المطلوبة داخل النموذج المخصص للخدمة واضغط حفظ."
+      }
+    ],
+    "troubleshooting": [
+      "يمكنك تحميل تطبيق (صحتي) أو استخدام البوابة مباشرة عبر متصفح الهاتف المحمول."
+    ],
+    "officialUrl": "https://www.sehatty.ps/public/#electronic-services",
+    "contactInfo": "البوابة الإلكترونية الرسمية لوزارة الصحة: sehatty.ps",
+    "warningNote": "تنبيه: كافة الخدمات الإلكترونية والتقارير الصادرة عبر منظومة صحتي مجانية ورسمية.",
+    "faqs": [
+      {
+        "question": "هل يمكنني استخراج نسخة إلكترونية من تقريري الطبي عبر بوابة صحتي؟",
+        "answer": "نعم، تتيح المنظومة للمرضى والجرحى الاطلاع على ملفاتهم وتقاريرهم الطبية المسجلة في المستشفيات الحكومية."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "moh-sehatty-injured-update-form",
+    "shortName": "نموذج تحديث بيانات الجرحى (وزارة الصحة)",
+    "englishName": "MoH Injured Citizens Registration Form",
+    "title": "نموذج تسجيل وتحديث بيانات الجرحى والمصابين في وزارة الصحة (منظومة صحتي)",
+    "organization": "وزارة الصحة الفلسطينية - دائرة التسجيل الطبي للجرحى",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "تحديث الجرحى",
+      "وزارة الصحة"
+    ],
+    "aidValue": "توثيق طبي + متابعة علاجية وتحويلات",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "جميع الجرحى والمصابين جراء العدوان على قطاع غزة في كافة المحافظات",
+    "summary": "النموذج الإلكتروني الرسمي لوزارة الصحة لتسجيل وتحديث بيانات الجرحى والمصابين ومتابعة احتياجاتهم العلاجية",
+    "detailedExplanation": "أطلقت وزارة الصحة الفلسطينية عبر بوابة صحتي نموذجاً إلكترونياً مخصصاً (forms.sehatty.ps/public/register_injuried) لحصر وتحديث البيانات الصحية والجغرافية للجرحى والمصابين في قطاع غزة، خاصة الذين تلقوا العلاج في مستشفيات ميدانية أو خاصة، لضمان توثيق إصاباتهم رسمياً ومتابعة احتياجاتهم من العمليات الجراحية، التأهيل، المعينات الحركية، والتحويلات الطبية.",
+    "requirements": [
+      "بطاقة الهوية الشخصية للجريح (9 أرقام).",
+      "تقرير طبي أولي أو وثيقة تثبت تاريخ ونوع الإصابة والمستشفى المعالج.",
+      "رقم جوال فعال للجريح ورقم بديل لأحد أقارب الدرجة الأولى.",
+      "تحديد مكان السكن أو النزوح الحالي بدقة."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح نموذج تسجيل وتحديث بيانات الجرحى",
+        "description": "انتقل إلى الرابط الرسمي المباشر (forms.sehatty.ps/public/register_injuried)."
+      },
+      {
+        "step": 2,
+        "title": "إدخال البيانات الشخصية وبيانات الإصابة",
+        "description": "أدخل رقم هوية الجريح، تاريخ الإصابة، مكانها في الجسم، والمستشفى الذي استقبل الحالة."
+      },
+      {
+        "step": 3,
+        "title": "إرفاق التقرير الطبي وحفظ النموذج",
+        "description": "ارفق صورة واضحة عن التقرير الطبي المتوفر لديك وحدد عنوانك الحالي ورقم الجوال ثم اضغط إرسال."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من أن صورة التقرير الطبي واضحة ومقروءة قبل رفعها في النموذج لتسهيل مراجعتها من اللجنة الطبية."
+    ],
+    "officialUrl": "https://forms.sehatty.ps/public/register_injuried",
+    "contactInfo": "اللجان الطبية ومكاتب شؤون الجرحى في المستشفيات المعتمدة",
+    "warningNote": "تنبيه: توثيق بيانات الجرحى في هذا النموذج ضروري لحفظ الحقوق الطبية والقانونية للمصابين.",
+    "faqs": [
+      {
+        "question": "هل يجب على الجريح الذي تعالج في مستشفى ميداني التسجيل في هذا النموذج؟",
+        "answer": "نعم، هذا النموذج مهم جداً لتثبيت بيانات الجرحى الذين تعالجوا في المستشفيات الميدانية أو الأهلية ضمن السجل المركزي لوزارة الصحة."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "alsanabel-orphans-google-form-gaza",
+    "shortName": "تسجيل الأيتام (قرية السنابل)",
+    "englishName": "Al-Sanabel Orphans Registration Form",
+    "title": "نموذج تسجيل الأيتام في قرية السنابل لرعاية وكفالة الأيتام - قطاع غزة",
+    "organization": "قرية السنابل لرعاية الأيتام والعمل الخيري",
+    "category": "orphans",
+    "categoryName": "رعاية الأيتام",
+    "tags": [
+      "تسجيل الأيتام",
+      "قرية السنابل"
+    ],
+    "aidValue": "كفالة مالية ورعاية شاملة للأيتام",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأطفال الأيتام فاقدو الأب أو الأبوين والأمهات والأسر الحاضنة للأيتام في قطاع غزة",
+    "summary": "الاستمارة المخصصة لتسجيل بيانات الأطفال الأيتام للاستفادة من برامج الكفالة والرعاية في قرية السنابل",
+    "detailedExplanation": "خصصت قرية السنابل لرعاية الأيتام استمارة تسجيل الأيتام الإلكترونية لحصر الأطفال الذين فقدوا آباءهم في قطاع غزة، بهدف إدراجهم في قوائم الكفالات الشهرية وبرامج الرعاية المعيشية والصحية والتعليمية والطرود المخصصة لأسر الأيتام.",
+    "requirements": [
+      "شهادة الوفاة لوالد اليتيم وصورة عن شهادة ميلاد الطفل اليتيم.",
+      "بطاقة الهوية الشخصية للأم أو المعيل الشرعي لليتيم.",
+      "رقم جوال فعال للتواصل مع الأسرة الحاضنة."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح رابط استمارة تسجيل الأيتام",
+        "description": "اضغط على زر التسجيل المباشر لفتح نموذج تسجيل الأيتام."
+      },
+      {
+        "step": 2,
+        "title": "تعبئة بيانات اليتيم والمعيل",
+        "description": "أدخل اسم الطفل اليتيم، رقم هويته، تاريخ ميلاده، وتاريخ وفاة الوالد وبيانات الأم أو الوصي."
+      },
+      {
+        "step": 3,
+        "title": "إرسال النموذج ومتابعة بوابة الجمعية",
+        "description": "في حال كانت دفعة النموذج مكتملة (Closed Form)، يمكنك التسجيل فوراً عبر البوابة العامة للجمعية (aid.alsanabel.org)."
+      }
+    ],
+    "troubleshooting": [
+      "ملاحظة هامة: إذا ظهر لك أن نموذج جوجل قد اكتمل العدد فيه حالياً، يمكنك التسجيل مباشرة عبر البوابة الرئيسية لجمعية السنابل المرفقة في الموقع."
+    ],
+    "officialUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf2uY6SKtx7cLHKDcULZFugjG_JBn1hbknqPlSy4NbszQu-Hw/closedform",
+    "contactInfo": "قرية السنابل لرعاية الأيتام | البوابة البديلة: aid.alsanabel.org",
+    "warningNote": "تنبيه: كفالات الأيتام مجانية بالكامل وتُصرف لمستحقيها دون أي عمولات أو وسطاء.",
+    "faqs": [
+      {
+        "question": "ماذا أفعل إذا ظهر لي أن النموذج مغلق لاكتمال العدد؟",
+        "answer": "تفتح الجمعية الدفعات على مراحل، ويمكنك في أي وقت تسجيل بيانات الأسرة واليتيم عبر بوابة جمعية السنابل الرسمية (aid.alsanabel.org/public/registration)."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "fade-pal-future-association-registration",
+    "shortName": "جمعية المستقبل للبيئة والتنمية",
+    "englishName": "Future Association (FADE) Registration",
+    "title": "رابط تسجيل المواطنين في جمعية المستقبل للبيئة والتنمية للمساعدات - غزة",
+    "organization": "جمعية المستقبل للبيئة والتنمية (FADE)",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "تسجيل المواطنين",
+      "جمعية المستقبل"
+    ],
+    "aidValue": "طرود غذائية وصحية ومساعدات إغاثية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر النازحة والمتضررة وصغار المزارعين والأسر الأكثر احتياجاً في محافظات قطاع غزة",
+    "summary": "البوابة الإلكترونية الرسمية لتسجيل وتحديث بيانات المواطنين للاستفادة من مشاريع جمعية المستقبل للبيئة والتنمية",
+    "detailedExplanation": "أطلقت جمعية المستقبل للبيئة والتنمية (FADE - فلسطين) بوابة تسجيل المواطنين الإلكترونية (aid.fade-pal.org) لتمكين الأسر النازحة والمتضررة في قطاع غزة من تسجيل بياناتها في قاعدة بيانات الجمعية، للاستفادة من المشاريع الإغاثية والتنموية الطارئة التي تشمل السلال الغذائية، سلال الخضروات، حقائب النظافة الصحية، ومبادرات دعم الصمود.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة والزوجة (9 أرقام).",
+      "عدد أفراد الأسرة الكلي والفئات الهشة داخل الأسرة.",
+      "تحديد المحافظة الحالية وعنوان السكن أو مخيم النزوح بالتفصيل.",
+      "رقم هاتف محمول فعال لاستقبال رسائل وإشعارات الجمعية."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى بوابة التسجيل الرسمية (aid.fade-pal.org)",
+        "description": "اضغط على زر التسجيل المباشر للانتقال إلى صفحة تسجيل المواطنين."
+      },
+      {
+        "step": 2,
+        "title": "تعبئة بيانات رب الأسرة والعائلة",
+        "description": "أدخل الاسم الرباعي، رقم الهوية، الحالة الاجتماعية، وبيانات أفراد الأسرة."
+      },
+      {
+        "step": 3,
+        "title": "تحديد العنوان الحالي وحفظ الطلب",
+        "description": "اختر المحافظة والحي الحالي وأدخل رقم الجوال ثم اضغط على تسجيل لحفظ بياناتك."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من إدخال الأرقام باللغة الإنجليزية وعدم ترك أي حقل إجباري فارغاً قبل الإرسال."
+    ],
+    "officialUrl": "https://aid.fade-pal.org/public/index.php/registration",
+    "contactInfo": "البوابة الرسمية لجمعية المستقبل للبيئة والتنمية: aid.fade-pal.org",
+    "warningNote": "تنبيه: التسجيل مجاني ومباشر عبر موقع الجمعية الرسمي ولا يتطلب أي وسطاء.",
+    "faqs": [
+      {
+        "question": "هل يمكن تعديل البيانات المسجلة في جمعية المستقبل عند تغيير مكان النزوح؟",
+        "answer": "نعم، تتيح البوابة للمسجلين تحديث بيانات العنوان ورقم الجوال لضمان الوصول إليهم عند تنفيذ التوزيع في منطقتهم."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "unicef-ai-assistant-gaza",
+    "shortName": "(اليونيسف) مساعد الذكاء الصناعي",
+    "englishName": "UNICEF AI Assistant Portal",
+    "title": "مساعد الذكاء الاصطناعي لمنظمة اليونيسف (UNICEF) - الاستعلام والدعم في غزة",
+    "organization": "منظمة الأمم المتحدة للطفولة (UNICEF)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "مساعد ذكي",
+      "استعلام اليونيسف"
+    ],
+    "aidValue": "استعلام فوري ودعم المستفيدين",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المستفيدة والمسجلة في برامج منظمة اليونيسف للمساعدات النقدية والإغاثية في قطاع غزة",
+    "summary": "منصة المساعد الذكي التابع لليونيسف للاستفسار التلقائي عن المساعدات النقدية وتحديث البيانات",
+    "detailedExplanation": "وفرت منظمة الأمم المتحدة للطفولة (اليونيسف - UNICEF) بوابة المساعد الذكي المدعوم بالذكاء الاصطناعي لتسهيل تواصل الأسر في قطاع غزة مع خدمات المنظمة على مدار الساعة، والحصول على إجابات فورية ودقيقة حول برامج التحويلات النقدية الطارئة (MPCA)، طريقة صرف الأكواد عبر محفظتي PalPay أو وكلاء الصرافة، خطوات تحديث رقم الهاتف الفعال، وآلية تقديم الملاحظات والاستفسارات دون الحاجة للانتظار الطويل على خطوط الهاتف.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة أو المستفيد (9 أرقام) عند الاستفسار عن حالة طلب محدد.",
+      "رقم الهاتف المحمول المسجل لدى المنظمة (جوال أو أوريدو).",
+      "اتصال بالإنترنت لفتح واجهة المحادثة الفورية مع المساعد الذكي."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى رابط مساعد اليونيسف الذكي",
+        "description": "اضغط على زر التسجيل المباشر لفتح البوابة الرسمية للمساعد الذكي (unicef.transcendedu.net)."
+      },
+      {
+        "step": 2,
+        "title": "اختيار موضوع الاستفسار أو كتابة سؤالك",
+        "description": "اختر من القائمة التفاعلية نوع الخدمة المطلوبة (استعلام عن حوالة نقدية، تحديث رقم جوال، أو استفسار عام)."
+      },
+      {
+        "step": 3,
+        "title": "اتباع التعليمات الآلية الفورية",
+        "description": "سيقوم المساعد الذكي بتوجيهك للخطوة الصحيحة أو تزويدك بنموذج المعالجة المناسب لحالتك."
+      }
+    ],
+    "troubleshooting": [
+      "اكتب سؤالك بلغة عربية واضحة ومختصرة ليتمكن المساعد الذكي من إعطائك الإجابة الدقيقة فوراً.",
+      "لا تكتب الرقم السري لكود الصرف (PIN) داخل أي محادثة حفاظاً على أمان حوالتك."
+    ],
+    "officialUrl": "https://unicef.transcendedu.net/",
+    "contactInfo": "مركز اتصال اليونيسف المجاني: 1800124123 | البوابة الذكية",
+    "warningNote": "تنبيه أمان: المساعد الذكي يقدم الإرشاد والاستعلام مجاناً؛ لا تشارك أبداً كود الصرف السري المرسل لهاتفك مع أي طرف.",
+    "faqs": [
+      {
+        "question": "هل يمكنني استخدام مساعد اليونيسف الذكي في أي وقت؟",
+        "answer": "نعم، البوابة الذكية تعمل إلكترونياً على مدار 24 ساعة طوال أيام الأسبوع للرد الفوري على استفسارات المواطنين."
+      },
+      {
+        "question": "ماذا أفعل إذا كنت بحاجة لتغيير رقم الهاتف المسجل في اليونيسف؟",
+        "answer": "يرشدك المساعد الذكي إلى الخطوات المعتمدة وقنوات التحقق الرسمية لتحديث رقم الجوال بأمان."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "palembeg-return-to-gaza-registration",
+    "shortName": "نموذج الراغبين بالعودة إلى غزة",
+    "englishName": "Return to Gaza Registration (Embassy)",
+    "title": "نموذج تجميع بيانات المواطنين الراغبين بالعودة إلى قطاع غزة - سفارة فلسطين",
+    "organization": "سفارة دولة فلسطين لدى جمهورية مصر العربية",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "العودة إلى غزة",
+      "تسجيل رسمي"
+    ],
+    "aidValue": "حصر وتنسيق قوائم العودة للقطاع",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "المواطنون الفلسطينيون المتواجدون خارج قطاع غزة (في جمهورية مصر العربية وخارجها) الراغبون بالعودة إلى القطاع",
+    "summary": "النموذج الإلكتروني الرسمي لحصر وتجميع بيانات المواطنين والعائلات الراغبين بالعودة إلى قطاع غزة",
+    "detailedExplanation": "أطلقت سفارة دولة فلسطين في القاهرة هذا النموذج الإلكتروني الرسمي لتجميع وحصر بيانات المواطنين الفلسطينيين المتواجدين في جمهورية مصر العربية أو الخارج والذين يرغبون بالعودة إلى قطاع غزة عند فتح المعبر وتوفر الترتيبات اللازمة. يهدف التسجيل إلى بناء قاعدة بيانات رسمية دقيقة تشمل أعداد الأفراد والحالات الإنسانية والمرضى لترتيب أولويات وكشوفات العودة بالتنسيق مع الجهات الرسمية المختصة.",
+    "requirements": [
+      "رقم الهوية الفلسطينية (9 أرقام) لكل فرد من أفراد الأسرة الراغبين بالعودة.",
+      "بيانات جواز السفر الفلسطيني أو وثيقة السفر وتاريخ آخر دخول.",
+      "رقم هاتف مصري فعال ورقم واتساب متاح للتواصل وإرسال إشعارات المواعيد.",
+      "تحديد المحافظة الأصلية في قطاع غزة وعدد المرافقين من أفراد العائلة."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح البوابة الرسمية لسفارة فلسطين",
+        "description": "انتقل إلى رابط نموذج العودة الرسمي (palembeg.ps/return) وتأكد من صحة النطاق الحكومي (.ps)."
+      },
+      {
+        "step": 2,
+        "title": "إدخال بيانات مقدم الطلب وأفراد الأسرة",
+        "description": "أدخل الاسم الرباعي باللغة العربية، رقم الهوية، رقم جواز السفر، وصلة القرابة للمرافقين."
+      },
+      {
+        "step": 3,
+        "title": "إدخال بيانات الاتصال ومكان الإقامة الحالي",
+        "description": "اكتب رقم الهاتف الفعال وعنوان التواجد الحالي ثم اضغط إرسال لحفظ بياناتك في الكشوفات الرسمية."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من مطابقة الأسماء وأرقام الهويات لما هو مدون في جواز السفر والهوية الشخصية لتفادي أي تأخير في التنسيق.",
+      "يكفي تعبئة النموذج مرة واحدة بشكل صحيح لكل أسرة."
+    ],
+    "officialUrl": "https://palembeg.ps/return/",
+    "contactInfo": "الشؤون القنصلية - سفارة دولة فلسطين بالقاهرة",
+    "warningNote": "تنبيه: التسجيل في نموذج حصر الراغبين بالعودة مجاني تماماً ويتم حصراً عبر الموقع الرسمي للسفارة دون أي وسطاء أو سماسرة.",
+    "faqs": [
+      {
+        "question": "هل التسجيل في النموذج يشمل جميع أفراد العائلة؟",
+        "answer": "نعم، يجب إدراج بيانات رب الأسرة وكافة أفراد العائلة المرافقين له والراغبين بالعودة معاً."
+      },
+      {
+        "question": "كيف سيتم إبلاغ المسجلين بمواعيد وترتيبات العودة؟",
+        "answer": "سيتم الإعلان رسمياً عبر منصات السفارة والتواصل مع المسجلين عبر أرقام الهواتف والواتساب المدخلة في الاستمارة."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "save-the-children-kobo-complaint-form",
+    "shortName": "تقديم شكوى لدى منظمة إنقاذ الطفل",
+    "englishName": "Save the Children Complaint & Feedback",
+    "title": "نموذج تقديم شكوى أو طلب مراجعة لدى منظمة إنقاذ الطفل (Save the Children)",
+    "organization": "منظمة إنقاذ الطفل الدولية (Save the Children)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "تقديم شكوى",
+      "إنقاذ الطفل"
+    ],
+    "aidValue": "مراجعة الطلبات والشكاوى الرسمية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المستفيدة أو المتقدمة لبرامج منظمة إنقاذ الطفل في قطاع غزة الراغبة بتقديم شكوى أو تحديث بيانات أو استفسار",
+    "summary": "البوابة الإلكترونية الرسمية (Kobo) لتقديم الشكاوى وطلبات المراجعة والاستفسار لدى منظمة إنقاذ الطفل",
+    "detailedExplanation": "تتيح منظمة إنقاذ الطفل الدولية (Save the Children) عبر منصة KoboToolbox الرسمية نموذجاً إلكترونياً مباشراً لاستقبال شكاوى وملاحظات واستفسارات المواطنين في قطاع غزة حول المساعدات النقدية، الطرود الصحية والغذائية، ومكملات تغذية الأطفال. يضمن هذا النموذج وصول شكواك أو طلب مراجعة ملف أسرتك مباشرة إلى فريق المساءلة والمتابعة المستقل في المنظمة للتحقق والرد عليك.",
+    "requirements": [
+      "الاسم الكامل لمقدم الطلب ورقم الهوية الشخصية (9 أرقام).",
+      "رقم الجوال الفعال المسجل أو الجديد للتواصل والرد على الشكوى.",
+      "تحديد المحافظة والمنطقة الحالية ونوع المساعدة أو البرنامج المرتبط بالشكوى.",
+      "شرح واضح ومختصر لموضوع الشكوى أو المشكلة التقنية التي واجهتك (مثل تأخر الكود أو تغير رقم الهاتف)."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى نموذج الشكاوى الرسمي على منصة Kobo",
+        "description": "افتح الرابط الرسمي المعتمد (kobo-ee.savethechildren.net) وانتظر تحميل الاستمارة بالعربية."
+      },
+      {
+        "step": 2,
+        "title": "تعبئة البيانات الشخصية وبيانات التواصل",
+        "description": "أدخل الاسم، رقم الهوية، المحافظة، ورقم الهاتف الذي ترغب باستقبال الرد عليه."
+      },
+      {
+        "step": 3,
+        "title": "كتابة تفاصيل الشكوى أو الطلب وإرسال النموذج",
+        "description": "اختر تصنيف الملاحظة واكتب التفاصيل بوضوح ثم اضغط على زر Submit / إرسال في أسفل الصفحة."
+      }
+    ],
+    "troubleshooting": [
+      "لا تغلق الصفحة قبل ظهور إشعار (تم إرسال النموذج بنجاح) باللون الأخضر.",
+      "تجنب إرسال نفس الشكوى عشرات المرات حتى يتمكن فريق المراجعة من معالجة طلبك بسرعة."
+    ],
+    "officialUrl": "https://kobo-ee.savethechildren.net/x/a0UiK2SK",
+    "contactInfo": "الخط المجاني لمنظمة إنقاذ الطفل: 1800222444",
+    "warningNote": "تنبيه: تقديم الشكاوى وطلبات المراجعة مجاني وسري تماماً، ولا يؤثر تقديم الشكوى سلباً على حق أسرتك في المساعدات.",
+    "faqs": [
+      {
+        "question": "هل يمكنني استخدام هذا النموذج لطلب تحديث رقم هاتفي المفقود؟",
+        "answer": "نعم، يمكنك اختيار بند تحديث البيانات أو الاستفسار وتوضيح رقم الهوية ورقم الهاتف القديم والجديد ليتم التحقق معك."
+      },
+      {
+        "question": "كم يستغرق الرد على الشكوى المقدمة عبر النموذج؟",
+        "answer": "تتم مراجعة الطلبات بحسب درجة الطوارئ ويجري التواصل مع مقدم الطلب هاتفياً أو عبر رسالة نصية فور استكمال الفحص."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "alsanabel-public-aid-registration-gaza",
+    "shortName": "تسجيل المواطنين في جمعية السنابل",
+    "englishName": "Al-Sanabel Aid Public Registration",
+    "title": "رابط تسجيل المواطنين في جمعية السنابل للمساعدات الإغاثية والإنسانية - غزة",
+    "organization": "جمعية السنابل للإغاثة والتنمية ورعاية الأيتام",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "تسجيل المواطنين",
+      "مساعدات إغاثية"
+    ],
+    "aidValue": "طرود غذائية ومساعدات عينية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر النازحة والمتضررة وذوو الدخل المحدود والأسر التي ترعى أيتاماً أو حالات خاصة في قطاع غزة",
+    "summary": "البوابة الإلكترونية الرسمية لتسجيل وتحديث بيانات المواطنين للاستفادة من مساعدات جمعية السنابل",
+    "detailedExplanation": "أتاحت جمعية السنابل بوابة التسجيل العام الإلكترونية (aid.alsanabel.org) لتمكين المواطنين وأرباب الأسر النازحة والمتضررة في قطاع غزة من تسجيل بيانات أسرهم وتحديث عناوين تواجدهم الحالية، وذلك لإدراجهم في قوائم الاستفادة من المشاريع الإغاثية الطارئة التي تنفذها الجمعية، والتي تشمل توزيع الطرود الغذائية، الوجبات الساخنة، المياه، الكسوة، وبرامج رعاية الأسر المتعففة والأيتام.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة والزوجة (9 أرقام صحيحة).",
+      "بيانات عدد أفراد الأسرة الكلي والحالات الخاصة (أيتام، جرحى، ذوي إعاقة، أمراض مزمنة).",
+      "تحديد المحافظة الحالية، الحي، وعنوان السكن أو مخيم النزوح بدقة.",
+      "رقم هاتف محمول فعال لاستقبال رسائل مواعيد التوزيع."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح بوابة التسجيل العام لجمعية السنابل",
+        "description": "اضغط على زر التسجيل المباشر للانتقال إلى الرابط الرسمي (aid.alsanabel.org/public/registration)."
+      },
+      {
+        "step": 2,
+        "title": "إدخال بيانات رب الأسرة والزوجة",
+        "description": "عبئ الاسم الرباعي ورقم الهوية والحالة الاجتماعية وعدد الأفراد المعالين."
+      },
+      {
+        "step": 3,
+        "title": "تحديد بيانات السكن والنزوح وإرسال الطلب",
+        "description": "اختر مكان تواجدك الحالي في قطاع غزة ورقم الجوال ثم اضغط على حفظ وتسجيل البيانات."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من كتابة أرقام الهوية والجوال بالأرقام الإنجليزية (0-9) لقبول النموذج دون أخطاء.",
+      "في حال كنت مسجلاً مسبقاً، يمكنك تحديث عنوان نزوحك الحالي عبر نفس البوابة."
+    ],
+    "officialUrl": "https://aid.alsanabel.org/public/registration",
+    "contactInfo": "البوابة الإلكترونية الرسمية لجمعية السنابل: aid.alsanabel.org",
+    "warningNote": "تنبيه: التسجيل عبر بوابة جمعية السنابل مجاني ومتاح لجميع الأسر المتضررة مباشرة دون الحاجة لأي وسطاء.",
+    "faqs": [
+      {
+        "question": "كيف أعرف أنه تم قبول طلبي وتخصيص مساعدة لأسرتي؟",
+        "answer": "يتم فرز الطلبات وفق معايير الاحتياج وإرسال رسائل نصية (SMS) للمستفيدين تتضمن موعد ومكان استلام المساعدة."
+      },
+      {
+        "question": "هل يشترط إحضار الهوية الأصلية عند استلام الطرد الإغاثي؟",
+        "answer": "نعم، يجب إبراز بطاقة الهوية الأصلية لرب الأسرة لمطابقتها مع الكشوفات المعتمدة في نقطة التوزيع."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "sehatty-employee-transport-card-gaza",
+    "shortName": "التسجيل في بطاقة المواصلات للموظفين",
+    "englishName": "Employee Transport Card (Sehatty)",
+    "title": "التسجيل في بطاقة المواصلات والتنقل للموظفين والكوادر العاملة (منصة صحتي)",
+    "organization": "وزارة الصحة / بوابة خدمات الموظفين (Sehatty)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "tags": [
+      "بطاقة المواصلات",
+      "خدمات الموظفين"
+    ],
+    "aidValue": "بطاقة تنقل ومواصلات معتمدة",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الموظفون والكوادر الصحية والإدارية والمهنية العاملة على رأس عملها في المرافق والمراكز المعتمدة",
+    "summary": "البوابة الإلكترونية الرسمية لتسجيل وتفعيل بطاقة المواصلات والتنقل الخاصة بالموظفين",
+    "detailedExplanation": "تُتيح بوابة (travel.sehatty.ps) الإلكترونية خدمة التسجيل وتحديث مسارات التنقل للموظفين والكوادر الصحية والإدارية العاملة في الميدان والمرافق الحيوية في قطاع غزة، وذلك لاستصدار وتفعيل بطاقة المواصلات المعتمدة التي تسهّل تنقل الكوادر بين أماكن سكنهم أو نزوحهم وأماكن عملهم في المستشفيات والمراكز الصحية والخدمية.",
+    "requirements": [
+      "رقم الهوية الشخصية للموظف (9 أرقام) والرقم الوظيفي المعتمد.",
+      "تحديد مكان العمل الفعلي الحالي (المستشفى، المركز الصحي، أو الإدارة).",
+      "تحديد عنوان السكن أو النزوح الحالي ونقطة الركوب الأقرب لمسار المواصلات.",
+      "رقم جوال فعال مسجل باسم الموظف لاستلام إشعار تفعيل البطاقة."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى بوابة بطاقة المواصلات (travel.sehatty.ps)",
+        "description": "افتح الرابط الرسمي المعتمد لتسجيل المواصلات عبر المتصفح."
+      },
+      {
+        "step": 2,
+        "title": "تسجيل الدخول والتحقق من البيانات الوظيفية",
+        "description": "أدخل رقم الهوية والبيانات المطلوبة للتحقق من السجل الوظيفي الفعال."
+      },
+      {
+        "step": 3,
+        "title": "تحديد مسار التنقل وحفظ الطلب",
+        "description": "اختر مكان السكن الحالي ومقر العمل وحدد أوقات الدوام ثم اضغط تأكيد لإصدار البطاقة."
+      }
+    ],
+    "troubleshooting": [
+      "في حال ظهور خطأ في بيانات مقر العمل بعد النقل المؤقت لمرفق آخر: راجع شؤون الموظفين في المرفق الحالي لتحديث مكان فرزك الوظيفي."
+    ],
+    "officialUrl": "https://travel.sehatty.ps/",
+    "contactInfo": "دائرة شؤون الموظفين وحركة المواصلات - بوابة صحتي",
+    "warningNote": "تنبيه: هذه البوابة مخصصة للكوادر والموظفين العاملين لتنظيم خدمات النقل والمواصلات الرسمية.",
+    "faqs": [
+      {
+        "question": "هل يمكن تعديل نقطة الركوب عند انتقال الموظف لمكان سكن جديد؟",
+        "answer": "نعم، يمكن الدخول للبوابة وتحديث عنوان السكن الحالي ليتم تعديل مسار المواصلات المعتمد للموظف."
+      },
+      {
+        "question": "كيف يتم استلام أو تفعيل بطاقة المواصلات؟",
+        "answer": "بعد اعتماد الطلب إلكترونياً، يتم تفعيل البطاقة وإشعار الموظف عبر البوابة أو برسالة نصية."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "kotof-alkhair-society-gaza",
+    "shortName": "جمعية قطوف الخير",
+    "englishName": "Kotof Al-Khair Society",
+    "title": "جمعية قطوف الخير - التسجيل للمساعدات الإغاثية والطرود الغذائية",
+    "organization": "جمعية قطوف الخير للإغاثة والتنمية",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "طرود غذائية",
+      "إغاثة عاجلة"
+    ],
+    "aidValue": "طرود ومساعدات إغاثية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر المتضررة والنازحة وذوو الدخل المحدود في محافظات قطاع غزة",
+    "summary": "توفير المساعدات الإغاثية الطارئة والطرود الغذائية للأسر المتضررة",
+    "detailedExplanation": "تقدم جمعية قطوف الخير والمبادرات الخيرية الشريكة برامج إغاثية عاجلة للأسر النازحة والمتضررة في قطاع غزة، تشمل توزيع السلال الغذائية، سلال الخضروات، مياه الشرب، والوجبات الساخنة، بالإضافة إلى مستلزمات الإيواء والفرشات والأغطية للأسر الأكثر احتياجاً.",
+    "requirements": [
+      "بطاقة الهوية الشخصية لرب الأسرة والزوجة (9 أرقام).",
+      "تحديد عدد أفراد الأسرة الكلي ومكان التواجد أو مخيم النزوح الحالي بدقة.",
+      "رقم جوال فعال لاستقبال رسائل مواعيد استلام الطرود الإغاثية."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "فتح استمارة التسجيل الإغاثي",
+        "description": "انتقل إلى رابط الاستمارة الرسمية وتأكد من تعبئة الحقول المطلوبة باللغة العربية."
+      },
+      {
+        "step": 2,
+        "title": "إدخال بيانات الأسرة وحالة السكن",
+        "description": "سجل الاسم الرباعي لرب الأسرة ورقم الهوية وعدد الأفراد وحالة المسكن الأصلي."
+      },
+      {
+        "step": 3,
+        "title": "تأكيد العنوان وإرسال الطلب",
+        "description": "حدد المحافظة والحي أو مركز الإيواء الحالي ثم اضغط إرسال."
+      }
+    ],
+    "troubleshooting": [
+      "يرجى عدم تكرار التسجيل أكثر من مرة لنفس الأسرة لتفادي استبعاد الطلب آلياً."
+    ],
+    "officialUrl": "https://www.mosd.gov.ps",
+    "contactInfo": "لجان التوزيع الميدانية المعتمدة لجمعية قطوف الخير",
+    "warningNote": "تنبيه: جميع المساعدات والطرود الغذائية توزع مجاناً لمستحقيها بموجب بطاقة الهوية الأصلية.",
+    "faqs": [
+      {
+        "question": "كيف يتم إبلاغ الأسرة بموعد استلام الطرد الغذائي؟",
+        "answer": "يتم التواصل عبر رسالة نصية (SMS) أو اتصال هاتفي يحدد نقطة التوزيع والموعد المخصص للاستلام."
+      }
+    ],
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "alfajr-palestinian-youth-society-gaza",
+    "shortName": "جمعية الفجر الشبابي الفلسطيني",
+    "englishName": "Al-Fajr Palestinian Youth Society",
+    "title": "جمعية الفجر الشبابي الفلسطيني - مبادرات الدعم والإغاثة المجتمعية",
+    "organization": "جمعية الفجر الشبابي الفلسطيني",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "مبادرات إغاثية",
+      "دعم الأسر"
+    ],
+    "aidValue": "طرود غذائية ومستلزمات",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر النازحة والمتضررة والشباب وأسر المخيمات في قطاع غزة",
+    "summary": "تقديم المساعدات الإنسانية والطرود التموينية ومبادرات الإغاثة العاجلة",
+    "detailedExplanation": "تعمل جمعية الفجر الشبابي الفلسطيني على تنفيذ سلسلة من التدخلات الإغاثية والمبادرات المجتمعية لمساندة العائلات النازحة والمتضررة في قطاع غزة، وتشمل توزيع السلال الغذائية، مياه الشرب، الكسوة، وأنشطة الدعم النفسي والاجتماعي للأطفال.",
+    "requirements": [
+      "رقم الهوية الشخصية لرب الأسرة.",
+      "تحديد مكان النزوح أو السكن الحالي وعدد أفراد الأسرة.",
+      "رقم هاتف متاح للتواصل عند التوزيع."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول لنموذج التسجيل",
+        "description": "افتح نموذج التسجيل المعتمد وأدخل البيانات الشخصية لرب الأسرة."
+      },
+      {
+        "step": 2,
+        "title": "تحديد نوع الاحتياج والعنوان",
+        "description": "حدد المحافظة الحالية ونوع المساعدة الطارئة المطلوبة للأسرة."
+      },
+      {
+        "step": 3,
+        "title": "إرسال الطلب",
+        "description": "اضغط إرسال ليتم إدراج الأسرة في قوائم الفحص والتوزيع الميداني."
+      }
+    ],
+    "troubleshooting": [
+      "تأكد من كتابة رقم الجوال بشكل صحيح لضمان وصول رسائل الاستلام."
+    ],
+    "officialUrl": "https://www.mosd.gov.ps",
+    "contactInfo": "فرق جمعية الفجر الشبابي الميدانية في قطاع غزة",
+    "warningNote": "التسجيل مجاني تماماً ويتم التوزيع وفق الأولويات الإنسانية المعتمدة.",
+    "faqs": [
+      {
+        "question": "هل تشمل المبادرات جميع محافظات قطاع غزة؟",
+        "answer": "تُنفذ المبادرات على مراحل حسب توفر المنح الإغاثية في مختلف المحافظات ومراكز الإيواء."
+      }
+    ],
+    "updatedAt": "2026-10-19"
+  },
+  {
+    "id": "saudi-cultural-center-relief-gaza",
+    "shortName": "المركز السعودي الثقافي",
+    "englishName": "Saudi Cultural Center / KSrelief",
+    "title": "المركز السعودي الثقافي والحملة الشعبية لإغاثة الشعب الفلسطيني في غزة",
+    "organization": "مركز الملك سلمان للإغاثة / المركز السعودي الثقافي",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "tags": [
+      "إغاثة عاجلة",
+      "سلال غذائية وإيواء"
+    ],
+    "aidValue": "سلال غذائية + حقائب إيواء",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر النازحة في المخيمات ومراكز الإيواء والأسر المتضررة في قطاع غزة",
+    "summary": "توزيع المساعدات الإغاثية الطارئة والسلال الغذائية ومستلزمات الإيواء",
+    "detailedExplanation": "تُقدم الحملة الإغاثية السعودية عبر المركز السعودي والشركاء الدوليين والمحليين (مثل الأونروا والهلال الأحمر الفلسطيني) جسراً إغاثياً متواصلاً يشمل السلال الغذائية المتكاملة، الخيام ومستلزمات الإيواء، الكسوة الشتوية، والمستلزمات الطبية للمستشفيات والمراكز الصحية في قطاع غزة.",
+    "requirements": [
+      "بطاقة الهوية الأصلية لرب الأسرة.",
+      "التسجيل في قوائم لجان الإيواء والمنظمات الشريكة المنفذة للتوزيع الميداني.",
+      "رقم هاتف فعال لاستلام إشعارات التوزيع."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "التحقق من التسجيل لدى الجهات الشريكة",
+        "description": "تأكد من تحديث بيانات أسرتك لدى الهلال الأحمر الفلسطيني والأونروا ولجان المخيمات المعتمدة."
+      },
+      {
+        "step": 2,
+        "title": "استلام إشعار التوزيع",
+        "description": "يتم إشعار الأسر المشمولة بموعد ونقطة تسليم السلة الغذائية أو حقيبة الإيواء."
+      },
+      {
+        "step": 3,
+        "title": "التوجه لنقطة التوزيع بالهوية الأصلية",
+        "description": "استلم مخصصات أسرتك مجاناً بعد مطابقة رقم الهوية في الكشوفات."
+      }
+    ],
+    "troubleshooting": [
+      "تواصل مع لجنة المخيم أو مركز التوزيع المعتمد في منطقتك في حال انتقالك لمحافظة جديدة."
+    ],
+    "officialUrl": "https://www.palestineredcrescent.org",
+    "contactInfo": "الشركاء المنفذون ومراكز التوزيع المعتمدة في قطاع غزة",
+    "warningNote": "جميع المساعدات الإغاثية المقدمة مجانية بالكامل ومخصصة للأسر المحتاجة ولا يجوز بيعها.",
+    "faqs": [
+      {
+        "question": "كيف يتم توزيع السلال الغذائية ومستلزمات الإيواء؟",
+        "answer": "يتم التوزيع ميدانياً بالتنسيق مع الهلال الأحمر الفلسطيني والهيئات الإغاثية المعتمدة وفق كشوفات الأسر النازحة."
+      }
+    ],
+    "updatedAt": "2026-10-19"
+  },
+  {
+    "id": "unicef-gaza-multi-purpose-cash-assistance",
+    "title": "دليل المساعدات النقدية الطارئة من اليونيسف (UNICEF) وطريقة صرف الأكواد",
+    "organization": "منظمة الأمم المتحدة للطفولة (UNICEF)",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر التي تضم أطفالاً، النساء الحوامل والمرضعات، أسر الأيتام، وذوي الإعاقة المسجلين في السجل الوطني الموحد",
+    "summary": "برنامج التحويلات النقدية الطارئة متعددة الأغراض للأسر والأطفال",
+    "detailedExplanation": "تُنفذ منظمة اليونيسف (UNICEF) برنامج التحويلات النقدية الطارئة متعددة الأغراض لدعم العائلات الأكثر هشاشة في قطاع غزة وتمكينها من شراء الاحتياجات الأساسية لأطفالها من غذاء ودواء ومستلزمات نظافة. تعتمد اليونيسف في اختيار المستفيدين على قواعد البيانات المشتركة مع وزارة التنمية الاجتماعية (MoSD) ووكالة الأونروا، بالإضافة إلى الحصر الميداني في مراكز الإيواء. يتم إرسال الحوالات النقدية عبر رسائل نصية تتضمن كود صرف خاص، أو تحويل مباشر إلى المحافظ الإلكترونية المعتمدة (PalPay / محفظتي أو Jawwal Pay).",
+    "requirements": [
+      "بطاقة الهوية الأصلية لرب الأسرة أو الأم المستفيدة الصادر باسمها كود الصرف.",
+      "الرسالة النصية الرسمية الواردة من المرسل المعتمد (UNICEF) والتي تحتوي على رمز الصرف السري.",
+      "أن يكون رقم الهاتف المسجل فعالاً وموجوداً مع المستفيد عند التوجه لنقطة الصرف أو عند التفعيل عبر تطبيق المحفظة الإلكترونية.",
+      "تحميل تطبيق محفظتي (PalPay) أو جوال باي (Jawwal Pay) وتوثيق الحساب بالهوية الشخصية لمن يرغب بالتحويل الرقمي وتفادي الازدحام."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "تحديث البيانات عبر بوابة وزارة التنمية الاجتماعية والأونروا",
+        "description": "بما أن اليونيسف تسحب قوائمها من السجل الموحد للتنمية الاجتماعية وقواعد بيانات الأونروا، تأكد أولاً من أن بيانات أطفالك ورقم هاتفك محدثة في كلا البوابتين."
+      },
+      {
+        "step": 2,
+        "title": "استلام رسالة الكود النصية (SMS)",
+        "description": "عند شمول أسرتك بالدفعة، ستصلك رسالة من اسم المرسل (UNICEF) توضح قيمة المبلغ بالشيكل ورقم الكود السري المكون من عدة أرقام وتاريخ انتهاء الصلاحية."
+      },
+      {
+        "step": 3,
+        "title": "إيداع الكود في المحفظة الإلكترونية أو التوجه لوكيل معتمد",
+        "description": "يمكنك إدخال الكود مباشرة داخل تطبيق PalPay (محفظتي) عبر خيار 'مساعدات اليونيسف' لإيداع المبلغ في رصيدك فوراً، أو التوجه لأقرب وكيل معتمد مصطحباً هويتك الأصلية."
+      },
+      {
+        "step": 4,
+        "title": "التحقق من استلام المبلغ كاملاً",
+        "description": "تأكد من عدّ المبلغ المستلم ومطابقته للقيمة المذكورة في الرسالة النصية قبل التوقيع أو مغادرة نقطة الصرف."
+      }
+    ],
+    "troubleshooting": [
+      "في حال حذف رسالة الكود عن طريق الخطأ: اتصل بالخط المجاني لليونيسف من نفس الشريحة المسجلة لطلب إعادة إرسال الرسالة بعد التحقق من هويتك.",
+      "في حال انتهاء صلاحية الكود بسبب ظروف النزوح: تواصل مع مركز خدمة المستفيدين لطلب تجديد الدورة المالية للحوالة."
+    ],
+    "officialUrl": "https://www.unicef.org/sop/ar",
+    "contactInfo": "مركز اتصال اليونيسف المجاني للاستفسارات والشكاوى: 1800124123",
+    "warningNote": "تنبيه أمني مشدد: لا تشارك كود اليونيسف السري أو رمز التفعيل (OTP) مع أي شخص عبر الهاتف أو مواقع التواصل مهما ادّعى أنه موظف تدقيق. مشاركة الكود تعني سرقة حوالتك فوراً.",
+    "faqs": [
+      {
+        "question": "هل يوجد رابط مستقل مباشر للتسجيل في مساعدات اليونيسف النقدية؟",
+        "answer": "تعتمد اليونيسف بشكل أساسي على قواعد البيانات الموحدة لوزارة التنمية الاجتماعية الفلسطينية ووكالة الغوث (UNRWA) والمسح الميداني، وتفتح أحياناً نماذج تحديث بيانات للمستفيدين السابقين لتحديث أرقام هواتفهم."
+      },
+      {
+        "question": "كم عدد الدفعات التي يحصل عليها المستفيد في برنامج اليونيسف؟",
+        "answer": "يختلف عدد الدفعات بحسب التمويل المتاح ودرجة هشاشة الأسرة، حيث تحصل بعض الأسر على دفعة طارئة لمرة واحدة بينما تستفيد الأسر التي تضم أطفالاً ذوي إعاقة أو أيتام من عدة دورات."
+      },
+      {
+        "question": "ماذا أفعل إذا طلب مني وكيل الصرف عمولة مرتفعة لصرف الكود؟",
+        "answer": "حوالات اليونيسف مدفوعة الرسوم مسبقاً؛ احتفظ باسم وموقع الوكيل وبلّغ عنه فوراً عبر الرقم المجاني لليونيسف أو عبر تحويل الكود لرصيد محفظتك واستخدامه في الشراء المباشر من المتاجر."
+      }
+    ],
+    "updatedAt": "2026-10-19",
+    "shortName": "منظمة اليونيسف (UNICEF)",
+    "englishName": "United Nations Children's Fund",
+    "tags": [
+      "مساعدات نقدية",
+      "دعم الطفولة"
+    ],
+    "aidValue": "حوالة نقدية (1000 شيكل)"
+  },
+  {
+    "id": "nrc-gaza-shelter-and-cash-support",
+    "title": "دليل مبادرات المجلس النرويجي للاجئين (NRC) للمساعدات النقدية ومستلزمات الإيواء",
+    "organization": "المجلس النرويجي للاجئين (NRC)",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "status": "active",
+    "governorates": [
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر النازحة في الخيام ومراكز الإيواء غير الرسمية والأسر التي فقدت مساكنها كلياً",
+    "summary": "توفير مستلزمات الإيواء الشتوية والشوادر والمساعدات النقدية للنازحين",
+    "detailedExplanation": "يُقدم المجلس النرويجي للاجئين (NRC) حزمة متكاملة من التدخلات الإنسانية في قطاع غزة تركز على قطاع الإيواء الطارئ (توفير الشوادر البلاستيكية، الخيام، الفرشات، والبطانيات)، والمساعدات النقدية متعددة الأغراض، ومشاريع المياه والصرف الصحي، فضلاً عن برنامج متخصص لتقديم المساعدة القانونية المجانية للأسر التي فقدت وثائقها الثبوتية أو أوراق ملكية عقاراتها خلال الحرب.",
+    "requirements": [
+      "بطاقة الهوية لرب الأسرة والزوجة.",
+      "إثبات حالة النزوح وموقع التواجد الحالي في المخيمات أو التجمعات السكنية.",
+      "رقم هاتف فعال للتواصل الميداني من قِبل فرق التقييم التابعة للمجلس النرويجي."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "التسجيل عبر الفرق الميدانية أو نموذج التواصل الرسمي",
+        "description": "يقوم المجلس النرويجي بإجراء مسح ميداني مباشر في تجمعات الخيام ومراكز الإيواء، كما يتيح قنوات تواصل رسمية لتسجيل الحالات الطارئة."
+      },
+      {
+        "step": 2,
+        "title": "زيارة التحقق وتقييم الاحتياج (Assessment)",
+        "description": "يقوم باحث ميداني يرتدي السترة الرسمية للمنظمة (NRC) بالتحقق من بيانات الأسرة وتحديد نوع الاحتياج العاجل (إيواء، نقدي، نظافة)."
+      },
+      {
+        "step": 3,
+        "title": "استلام رسالة الاستحقاق وموعد التوزيع",
+        "description": "يتم إبلاغ الأسر المقبولة عبر رسالة نصية بموعد ومكان استلام مستلزمات الإيواء أو كود الحوالة النقدية."
+      }
+    ],
+    "troubleshooting": [
+      "في حال كنت تقيم في تجمع خيام لم تصله الفرق الميدانية: يمكن للجنة الممثلة للمخيم التواصل مع خط الاستعلامات المجاني للمجلس النرويجي لطلب إدراج التجمع في خطة المسح."
+    ],
+    "officialUrl": "https://www.nrc.no/countries/middle-east/palestine/",
+    "contactInfo": "الخط المجاني للمجلس النرويجي للاجئين في فلسطين: 1800224466",
+    "warningNote": "تنبيه: لا يطلب موظفو المجلس النرويجي أي مقابل مالي لتسجيل الخيام أو إدراج الأسماء، وجميع الباحثين الميدانيين يحملون بطاقات تعريف رسمية.",
+    "faqs": [
+      {
+        "question": "ما هي خدمة الدعم القانوني (ICLA) التي يقدمها المجلس النرويجي في غزة؟",
+        "answer": "هي خدمة مجانية تساعد النازحين والمتضررين في إجراءات استخراج الوثائق الرسمية المفقودة (مثل شهادات الميلاد، الهويات، وحجج الملكية) وتوثيق أضرار المساكن قانونياً."
+      },
+      {
+        "question": "كيف يتم اختيار الأسر المستفيدة من شوادر ومستلزمات الشتاء؟",
+        "answer": "تُمنح الأولوية للأسر المقيمة في خيام مهترئة، والتي تضم أطفالاً صغاراً أو كبار سن وذوي إعاقة في المناطق الأكثر عرضة لتجمع مياه الأمطار."
+      }
+    ],
+    "updatedAt": "2026-10-17",
+    "shortName": "المجلس النرويجي للاجئين",
+    "englishName": "Norwegian Refugee Council (NRC)",
+    "tags": [
+      "مستلزمات إيواء",
+      "مساعدات نقدية"
+    ],
+    "aidValue": "حقيبة إيواء + دعم نقدي"
+  },
+  {
+    "id": "oxfam-gaza-food-hygiene-vouchers",
+    "title": "دليل القسائم الشرائية (الفاوشر) للغذاء والنظافة من منظمة أوكسفام (Oxfam)",
+    "organization": "منظمة أوكسفام الدولية (Oxfam) والشركاء المحليون",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "status": "active",
+    "governorates": [
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "مدينة غزة"
+    ],
+    "targetAudience": "الأسر النازحة، الأسر التي ترأسها نساء، وأسر صغار المزارعين والصيادين المتضررين",
+    "summary": "تقديم القسائم الشرائية للخضروات والمواد التموينية وحقائب النظافة",
+    "detailedExplanation": "تعمل منظمة أوكسفام (Oxfam) عبر شبكة واسعة من المؤسسات الأهلية الشريكة في قطاع غزة (مثل جمعية الإغاثة الزراعية PARC، مركز العمل التنموي معاً MA'AN، واتحاد لجان العمل الزراعي) لتنفيذ مشاريع القسائم الشرائية (Vouchers) وتوزيع السلال الخضراء الطازجة ومياه الشرب النقية. يتيح نظام القسائم للأسرة المستفيدة التوجه إلى متاجر وموزعين معتمدين محلياً لاختيار احتياجاتها من الخضروات والمواد الغذائية والمنظفات ضمن سقف مالي محدد لكل أسرة.",
+    "requirements": [
+      "بطاقة الهوية الأصلية لرب الأسرة أو الزوجة المستفيدة.",
+      "عدم استفادة الأسرة من قسيمة شرائية مماثلة من نفس المشروع خلال الشهر ذاته.",
+      "الالتزام بصرف القسيمة من المتجر المعتمد المحدد في الرسالة النصية وخلال الفترة الزمنية المحددة."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "التسجيل عبر قوائم المؤسسات الشريكة ولجان الإيواء",
+        "description": "يتم حصر الأسماء عبر قواعد بيانات الشركاء المحليين (الإغاثة الزراعية، مركز معاً) والمسح الميداني لمخيمات النزوح."
+      },
+      {
+        "step": 2,
+        "title": "استلام القسيمة أو الكود الشرائي",
+        "description": "يتم تسليم المستفيد بطاقة قسيمة ممغنطة أو كود شرائي نصي مع قائمة الأصناف المسموح بشرائها والأسعار الاسترشادية المعتمدة."
+      },
+      {
+        "step": 3,
+        "title": "التوجه للمتجر المعتمد واستلام المخصصات",
+        "description": "توجه للمحل التجاري المحدد في رسالتك، واختر الأصناف المطلوبة وتأكد من استلام فاتورة تفصيلية ومطابقة الأسعار للقائمة المعلنة من المنظمة."
+      }
+    ],
+    "troubleshooting": [
+      "في حال حاول التاجر إلزامك بأصناف رديئة أو رفع الأسعار عن التسعيرة المعتمدة: لا تقم بالتوقيع أو تسليم الكود، وتواصل فوراً مع رقم الشكاوى المطبوع على القسيمة."
+    ],
+    "officialUrl": "https://www.oxfam.org/en/what-we-do/countries/occupied-palestinian-territory-and-israel",
+    "contactInfo": "خط الشكاوى والمقترحات لدى أوكسفام والشركاء الميدانيين (مطبوع على ظهر كل قسيمة)",
+    "warningNote": "يُمنع منعاً باتاً تبديل القسيمة الشرائية بنقد (تسييل الكابونة) مقابل خصم نسبة للتاجر، حيث يعرض ذلك طرفي العملية لإلغاء الاستفادة نهائياً.",
+    "faqs": [
+      {
+        "question": "هل يمكنني صرف القسيمة الشرائية على أكثر من دفعة؟",
+        "answer": "يعتمد ذلك على نوع القسيمة؛ البطاقات الإلكترونية تتيح أحياناً الشراء على دفعتين خلال فترة الصلاحية، بينما القسائم الورقية تُصرف كاملة في زيارة واحدة."
+      },
+      {
+        "question": "ما هي الأصناف المشمولة في قسائم النظافة الصحية (Hygiene Kit)؟",
+        "answer": "تشمل الصابون، الشامبو، مسحوق الغسيل، الفوط الصحية، معجون وفراشي الأسنان، سائل الجلي، ومواد التعقيم الأساسية."
+      }
+    ],
+    "updatedAt": "2026-10-16",
+    "shortName": "منظمة أوكسفام الدولية",
+    "englishName": "Oxfam International - Gaza",
+    "tags": [
+      "قسائم شرائية",
+      "سلة خضار ونظافة"
+    ],
+    "aidValue": "قسيمة شرائية (فاوشر)"
+  },
+  {
+    "id": "save-the-children-gaza-nutrition-cash",
+    "title": "دليل برامج منظمة إنقاذ الطفل (Save the Children) لرعاية الأطفال والأمهات في غزة",
+    "organization": "منظمة إنقاذ الطفل الدولية (Save the Children)",
+    "category": "orphans",
+    "categoryName": "رعاية الأيتام",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر التي تضم أطفالاً دون سن 5 سنوات، الرضّع، الأطفال المصابين بسوء التغذية، والأمهات الحوامل والمرضعات",
+    "summary": "دعم الأسر الحاضنة للأطفال دون 5 سنوات والأيتام والمكملات العلاجية",
+    "detailedExplanation": "تركز منظمة إنقاذ الطفل (Save the Children) تدخلاتها الطارئة في قطاع غزة على حماية حياة وصحة الأطفال في ظل الظروف الإنسانية الحرجة. تدير المنظمة بالتعاون مع العيادات الميدانية والمؤسسات الشريكة نقاط فحص تغذوي للأطفال دون سن الخامسة للكشف المبكر عن حالات الهزال وسوء التغذية الحاد، وتزويدهم بالمكملات الغذائية العلاجية (RUTF / Plumpy'Nut)، والفيتامينات، وحقائب مستلزمات الرضع (حفاضات، ملابس أطفال، ومستلزمات عناية)، بالإضافة إلى الدعم النفسي والاجتماعي ومساحات التعلم الصديقة للطفل.",
+    "requirements": [
+      "شهادة ميلاد الطفل أو بطاقة الهوية للأب/الأم المسجل فيها الطفل.",
+      "بطاقة المتابعة الصحية للطفل (كرت التطعيم) أو بطاقة متابعة الحمل للأم الحامل.",
+      "إجراء فحص قياس محيط منتصف الذراع (MUAC) للطفل في النقطة الطبية لتحديد نوع المكمل الغذائي المطلوب."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "التوجه لأقرب نقطة طبية أو مركز تغذية شريك",
+        "description": "اصطحب طفلك إلى النقطة الطبية المعتمدة داخل مركز الإيواء أو العيادة الميدانية الشريكة لمنظمة إنقاذ الطفل."
+      },
+      {
+        "step": 2,
+        "title": "إجراء الفحص التغذوي المجاني",
+        "description": "يقوم أخصائي التغذية بقياس وزن الطفل وطوله ومحيط الذراع بشريط (MUAC) الملون لتشخيص الحالة التغذوية."
+      },
+      {
+        "step": 3,
+        "title": "استلام المخصصات العلاجية وجدول المتابعة",
+        "description": "يتم صرف حصة أسبوعية أو نصف شهرية من المكملات الغذائية والبسكويت المدعم، وتحديد موعد المراجعة الدورية لمتابعة تحسن الوزن."
+      }
+    ],
+    "troubleshooting": [
+      "إذا كان الطفل يعاني من حساسية أو صعوبة في تقبل المكمل الغذائي: راجع أخصائي التغذية في النقطة الطبية فوراً لاستبداله بالبديل العلاجي المناسب."
+    ],
+    "officialUrl": "https://opt.savethechildren.net",
+    "contactInfo": "الخط المجاني لمنظمة إنقاذ الطفل في فلسطين: 1800222444",
+    "warningNote": "تحذير طبي: المكملات الغذائية العلاجية والحليب الطبي تُصرف مجاناً بوصفة تغذوية، ويُحظر تداولها أو شراؤها من البسطات والأسواق غير النظامية حرصاً على سلامة أطفالكم.",
+    "faqs": [
+      {
+        "question": "كيف أعرف أن طفلي يحتاج إلى تقييم عاجل لسوء التغذية؟",
+        "answer": "إذا لاحظت فقداناً ملحوظاً في الوزن، خمولاً مستمراً، أو تورماً في القدمين، توجه فوراً لأقرب نقطة طبية لإجراء فحص الشريط الملون المجاني."
+      },
+      {
+        "question": "هل تقدم المنظمة مساعدات للأطفال الأيتام أو المنفصلين عن ذويهم؟",
+        "answer": "نعم، تخصص المنظمة برنامج حماية متكاملاً لدعم الأسر الكافلة للأيتام والأطفال غير المصحوبين، ويشمل تحويلات نقدية وكسوة ومتابعة فردية."
+      }
+    ],
+    "updatedAt": "2026-10-15",
+    "shortName": "منظمة إنقاذ الطفل",
+    "englishName": "Save the Children Palestine",
+    "tags": [
+      "رعاية الأطفال",
+      "تغذية ومكملات"
+    ],
+    "aidValue": "مكملات غذائية + كفالة أطفال"
+  },
+  {
+    "id": "icrc-gaza-family-links-and-injured-support",
+    "title": "دليل خدمات اللجنة الدولية للصليب الأحمر (ICRC) في قطاع غزة",
+    "organization": "اللجنة الدولية للصليب الأحمر (ICRC) والهلال الأحمر الفلسطيني",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "عائلات المفقودين والمعتقلين، الجرحى ومبتورو الأطراف، والأسر المتضررة في مناطق التماس",
+    "summary": "خدمات البحث عن المفقودين ودعم الجرحى وذوي الإعاقة والمساعدات الطارئة",
+    "detailedExplanation": "تضطلع اللجنة الدولية للصليب الأحمر (ICRC) بدور إنساني حيوي في قطاع غزة بموجب اتفاقيات جنيف، حيث تتركز خدماتها المباشرة للمواطنين في محور إعادة الروابط العائلية (البحث عن المفقودين، الاستعلام عن المعتقلين، ونقل الأخبار العائلية)، ودعم المستشفيات والمرافق الصحية، وتشغيل وتطوير مركز الأطراف الصناعية والتأهيل الجسدي لتقديم خدمات العلاج الطبيعي والكراسي المتحركة والأطراف التعويضية للجرحى مجاناً.",
+    "requirements": [
+      "لبلاغات المفقودين والمعتقلين: الاسم الرباعي للشخص المفقود، رقم هويته، تاريخ ومكان آخر مشاهدة أو اعتقال، وأرقام تواصل العائلة.",
+      "لخدمات التأهيل والأطراف الصناعية: التقرير الطبي للإصابة وبطاقة الهوية الشخصية للجريح."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الاتصال الهاتفي أو مراجعة مكتب الصليب الأحمر",
+        "description": "تواصل عبر أرقام الخطوط المباشرة المخصصة لإقليم غزة أو راجع مكتب اللجنة الدولية في خانيونس أو مدينة غزة."
+      },
+      {
+        "step": 2,
+        "title": "فتح ملف رسمي وتوثيق البيانات",
+        "description": "سيقوم موظف الحماية بتسجيل كافة التفاصيل الدقيقة لمنحك رقم ملف مرجعي خاص بمتابعة الحالة."
+      },
+      {
+        "step": 3,
+        "title": "المتابعة الدورية وتحديث أرقام الهواتف",
+        "description": "احتفظ برقم الملف المرجعي وقم بإبلاغ المكتب عند تغير رقم هاتفك لضمان تواصل الفريق معك فور توفر أي معلومات رسمية."
+      }
+    ],
+    "troubleshooting": [
+      "في حال انشغال خطوط الهاتف بسبب كثافة الاتصالات: يمكنك تسجيل البلاغ عبر البوابة الإلكترونية الرسمية لإعادة الروابط العائلية التابعة للصليب الأحمر."
+    ],
+    "officialUrl": "https://www.icrc.org/ar/where-we-work/middle-east/palestine",
+    "contactInfo": "مكتب الصليب الأحمر في غزة - خط إعادة الروابط العائلية المعلن عبر الصفحة الرسمية",
+    "warningNote": "تنبيه: كافة خدمات البحث عن المفقودين ومتابعة شؤون المعتقلين والتأهيل الطبي لدى الصليب الأحمر مجانية وسرية تماماً.",
+    "faqs": [
+      {
+        "question": "من يحق له تقديم بلاغ عن شخص مفقود أو معتقل لدى الصليب الأحمر؟",
+        "answer": "يُقبل البلاغ من أقارب الدرجة الأولى (الوالدين، الزوج/الزوجة، الأبناء، أو الأشقاء) لضمان دقة البيانات وخصوصية العائلة."
+      },
+      {
+        "question": "هل يوفر الصليب الأحمر كراسي متحركة ومعينات حركية للمصابين؟",
+        "answer": "نعم، بالتعاون مع مركز الأطراف الصناعية والشركاء الصحيين، يتم تقييم حالة المصاب وتزويده بالمعينات الحركية وجلسات التأهيل مجاناً."
+      }
+    ],
+    "updatedAt": "2026-10-14",
+    "shortName": "اللجنة الدولية للصليب الأحمر",
+    "englishName": "International Committee of the Red Cross",
+    "tags": [
+      "إغاثة وجرحى",
+      "روابط عائلية"
+    ],
+    "aidValue": "تأهيل طبي + مساعدات طارئة"
+  },
+  {
+    "id": "who-moh-gaza-medical-evacuation-and-chronic-meds",
+    "title": "دليل التنسيق الطبي للمرضى والجرحى وتوفير أدوية الأمراض المزمنة - غزة",
+    "organization": "منظمة الصحة العالمية (WHO) ودائرة العلاج بالخارج",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الجرحى ذوو الإصابات الحرجة، مرضى الأورام، الفشل الكلوي، وأمراض القلب والعيون المتقدمة",
+    "summary": "تنسيق التحويلات الطبية للجرحى والمرضى وتوفير أدوية الأمراض المزمنة",
+    "detailedExplanation": "تعمل منظمة الصحة العالمية (WHO) بالتنسيق مع وزارة الصحة ودائرة العلاج بالخارج والمستشفيات الميدانية في قطاع غزة على تسيير قوافل الإجلاء الطبي للحالات الحرجة وتوفير الأدوية التخصصية لمرضى السرطان والغسيل الكلوي والأمراض المزمنة. تخضع عملية التحويل الطبي لبروتوكول طبي صارم يبدأ من الطبيب المعالج مروراً باللجنة الطبية التخصصية لتحديد أولوية الحالة وتنسيق سفرها واستقبالها في المستشفيات المستضيفة خارج القطاع.",
+    "requirements": [
+      "تقرير طبي حديث ومفصل صادر عن مستشفى حكومي أو ميداني معتمد يوضح التشخيص الدقيق وعدم توفر العلاج داخل قطاع غزة.",
+      "نموذج التحويل الطبي الرسمي (نموذج رقم 1) موقعاً من اللجنة الطبية المختصة.",
+      "صور واضحة عن بطاقة الهوية أو جواز السفر للمريض وللمرافق المقترح (من الدرجة الأولى).",
+      "أرقام هواتف فعالة للمريض وأحد أقاربه تعمل على مدار الساعة لتلقي اتصال التنسيق."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "عرض الحالة على اللجنة الطبية التخصصية في المستشفى",
+        "description": "راجع القسم الطبي المختص في المستشفى (مثل مجمع ناصر الطبي، مستشفى شهداء الأقصى، أو المستشفى الأوروبي/الميداني) لاستصدار قرار التحويل."
+      },
+      {
+        "step": 2,
+        "title": "تسجيل المعاملة في دائرة العلاج بالخارج",
+        "description": "سلم التقرير الطبي وصور الهويات لمكتب التحويلات الطبية لإدراج اسم المريض في المنظومة الإلكترونية الموحدة."
+      },
+      {
+        "step": 3,
+        "title": "متابعة حالة التحويلة وانتظار اتصال التنسيق",
+        "description": "بعد مراجعة الملف وتصنيف الأولوية السريرية، يتواصل فريق التنسيق في منظمة الصحة العالمية هاتفياً مع المريض لإبلاغه بموعد التجمع والسفر."
+      }
+    ],
+    "troubleshooting": [
+      "في حال تغير الحالة الصحية للمريض نحو الحرج الشديد أثناء الانتظار: اطلب من الطبيب المعالج إرسال تحديث طبي عاجل (Urgent Update) للجنة التحويلات لرفع درجة الأولوية."
+    ],
+    "officialUrl": "https://www.emro.who.int/ar/pse/palestine-infocus/index.html",
+    "contactInfo": "مكاتب التحويلات الطبية في المستشفيات المعتمدة في قطاع غزة",
+    "warningNote": "تحذير صارم: الإجلاء الطبي والتحويلات العلاجية مجانية بالكامل وتتم وفق معايير طبية بحتة. احذر من الوقوع ضحية للمحتالين الذين يطلبون مبالغ مالية بالدولار بزعم إدراج الأسماء في كشوفات السفر.",
+    "faqs": [
+      {
+        "question": "كم عدد المرافقين المسموح بهم مع المريض المحول للعلاج بالخارج؟",
+        "answer": "يُسمح عادةً بمرافق واحد فقط من أقارب الدرجة الأولى لكل مريض، ويُفضل أن يكون قادراً صحياً على رعاية المريض."
+      },
+      {
+        "question": "هل يمكن للمريض الذي لا يمتلك جواز سفر ساري المفعول التسجيل في التحويلات الطبية؟",
+        "answer": "نعم، يتم تنسيق سفر الحالات المرضية والجرحى بموجب بطاقة الهوية الشخصية أو شهادة الميلاد للأطفال بالتنسيق مع منظمة الصحة العالمية والجهات المستقبلة."
+      }
+    ],
+    "updatedAt": "2026-10-18",
+    "shortName": "منظمة الصحة العالمية",
+    "englishName": "World Health Organization (WHO)",
+    "tags": [
+      "تحويلات طبية",
+      "أدوية مزمنة"
+    ],
+    "aidValue": "تنسيق طبي وعلاجي مجاني"
+  },
+  {
+    "id": "gaza-housing-damage-assessment-registration",
+    "title": "دليل توثيق وتسجيل أضرار المساكن والمنشآت في قطاع غزة",
+    "organization": "وزارة الأشغال العامة والإسكان / برامج حصر الأضرار",
+    "category": "official",
+    "categoryName": "التسجيلات الرسمية",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "أصحاب المنازل والشقق السكنية المدمرة كلياً أو المتضررة جزئياً في كافة محافظات قطاع غزة",
+    "summary": "التسجيل الرسمي لحصر الأضرار الكلية والجزئية للمنازل والمنشآت السكنية",
+    "detailedExplanation": "يُعد التوثيق الرسمي والدقيق لأضرار الوحدات السكنية الخطوة الأساسية لحفظ حقوق المواطنين المتضررين في قطاع غزة والاستفادة من برامج الإغاثة السكنية (مثل المساعدات النقدية لبدل الإيجار، وحدات الإيواء المؤقت، أو منح الترميم وإعادة الإعمار المستقبلية التي تشرف عليها وزارة الأشغال العامة، برنامج الأمم المتحدة الإنمائي UNDP، ووكالة الأونروا للاجئين). يوضح هذا الدليل كيفية تجهيز ملف إثبات الملكية أو السكن وكيفية تسجيل بيانات الوحدة المتضررة.",
+    "requirements": [
+      "بطاقة الهوية الشخصية لمالك العقار أو شاغل الوحدة السكنية.",
+      "مستند إثبات الملكية أو الحيازة (طابو، عقد شراء، حجة، عقد إيجار، أو فاتورة كهرباء/مياه/بلدية باسم المتضرر).",
+      "تحديد الموقع الجغرافي الدقيق للعقار (المحافظة، الحي، الشارع، رقم القسيمة والقطعة إن توفر، أو الإحداثيات).",
+      "صور فوتوغرافية للضرر (إن توفرت وكان الوصول للمنطقة آمناً دون المخاطرة بالحياة)."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "الدخول إلى المنصة الإلكترونية لحصر الأضرار",
+        "description": "توجه إلى البوابة الإلكترونية الرسمية لوزارة الأشغال العامة والإسكان المخصصة للإبلاغ الأولي عن أضرار المباني السكنية."
+      },
+      {
+        "step": 2,
+        "title": "إدخال بيانات المالك والوحدة السكنية",
+        "description": "سجّل بيانات رب الأسرة، عدد الطوابق، مساحة الشقة أو المنزل، ونوع الملكية، مع تحديد ما إذا كان المتضرر لاجئاً (يمتلك كرت وكالة) أم مواطناً."
+      },
+      {
+        "step": 3,
+        "title": "تحديد درجة الضرر التقديرية",
+        "description": "اختر تصنيف الضرر الأولي (هدم كلي، ضرر بليغ غير صالح للسكن، ضرر جزئي متوسط، أو ضرر طفيف)."
+      },
+      {
+        "step": 4,
+        "title": "الاحتفاظ برقم البلاغ لحين زيارة اللجنة الهندسية",
+        "description": "احفظ رقم طلب الإبلاغ الإلكتروني، حيث يُعتمد عليه لاحقاً عند نزول الفرق الهندسية الميدانية للمعاينة الفنية والتقييم النهائي."
+      }
+    ],
+    "troubleshooting": [
+      "في حال فقدان أوراق ملكية المنزل تحت الأنقاض: لا تقلق، يمكنك التسجيل مبدئياً برقم الهوية ورقم اشتراك الكهرباء أو البلدية، والاستعانة ببرنامج الدعم القانوني المجاني (مثل NRC) لاستخراج مستخرجات رسمية لاحقاً."
+    ],
+    "officialUrl": "https://www.mpwh.ps",
+    "contactInfo": "البوابة الرسمية لوزارة الأشغال العامة والإسكان الفلسطينية",
+    "warningNote": "تنبيه: الإبلاغ الأولي عبر المنصة هو إجراء توثيقي مجاني، والتقييم النهائي لقيمة الضرر يتم حصراً عبر اللجان الهندسية المختصة عند توفر الظروف الميدانية.",
+    "faqs": [
+      {
+        "question": "إذا كان المبنى مكوناً من عدة شقق لأبناء متزوجين، هل يسجل الوالد فقط أم كل ابن على حدة؟",
+        "answer": "يُسجل مالك البناء الأصلي بيانات العقار الكلي، ويُسجل كل ابن متزوج يقيم في شقة مستقلة بيانات وحدته السكنية وأسرته لضمان حصر الأسر المتضررة."
+      },
+      {
+        "question": "ماذا عن الأسر التي كانت تسكن بالإيجار ودُمر المنزل المستأجر؟",
+        "answer": "يحق للمستأجر التسجيل كـ 'شاغل وحدة متضرر' للمطالبة بتعويض الأثاث المفقود والاستفادة من برامج الإيواء المؤقت وبدل الإيجار، بينما يطالب المالك بتعويض البناء."
+      }
+    ],
+    "updatedAt": "2026-10-16",
+    "shortName": "توثيق وحصر أضرار المساكن",
+    "englishName": "Housing Damage Assessment (MPWH)",
+    "tags": [
+      "حصر الأضرار",
+      "إيواء وإعمار"
+    ],
+    "aidValue": "توثيق رسمي لبرامج الإيواء"
+  },
+  {
+    "id": "anera-wck-gaza-community-kitchens-and-meals",
+    "title": "دليل نقاط التكايا والمطابخ المجتمعية والسلال الغذائية من مؤسسة (ANERA)",
+    "organization": "مؤسسة أمديست/إنيره (ANERA) والمطابخ المجتمعية الشريكة",
+    "category": "relief",
+    "categoryName": "المساعدات والإغاثة",
+    "status": "active",
+    "governorates": [
+      "شمال غزة",
+      "مدينة غزة",
+      "دير البلح (الوسطى)",
+      "خانيونس",
+      "رفح"
+    ],
+    "targetAudience": "الأسر النازحة في المخيمات ومراكز الإيواء والأحياء المتضررة التي تفتقر لغاز الطهي والإمكانات التموينية",
+    "summary": "توفير الوجبات الساخنة اليومية وسلال الخضروات الطازجة والأدوية المجانية",
+    "detailedExplanation": "تُعد مؤسسة الشرق الأدنى للاجئين (ANERA) من أبرز المنظمات الإنسانية الفاعلة ميدانياً في قطاع غزة، حيث تدير وتشرف بالتعاون مع المبادرات المحلية والمطابخ المركزية على إعداد وتوزيع مئات الآلاف من الوجبات الساخنة يومياً، بالإضافة إلى توزيع السلال الغذائية، سلال الخضروات الطازجة التي يتم شراؤها من المزارعين المحليين لدعم صمودهم، وتزويد المستشفيات والعيادات الخيرية بشحنات الأدوية والمستهلكات الطبية المجانية.",
+    "requirements": [
+      "التسجيل لدى لجنة المخيم أو المندوب المعتمد لمنطقة السكن/النزوح لتنظيم استلام الوجبات الساخنة والخبز.",
+      "بطاقة الهوية لرب الأسرة عند استلام السلال الغذائية العائلية أو سلال الخضروات."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "التنسيق عبر لجان مراكز الإيواء والمخيمات",
+        "description": "لتجنب التدافع أمام المطابخ المركزية، يتم تسليم حصص الوجبات الساخنة والخبز عبر مندوبي المخيمات والتجمعات السكنية وفق كشوفات الأسر المقيمة."
+      },
+      {
+        "step": 2,
+        "title": "التسجيل في كشوفات السلال الغذائية والخضروات",
+        "description": "تقوم الفرق الميدانية التابعة لمؤسسة ANERA والجمعيات القاعدية الشريكة بتحديث قوائم الأسر في كل مربع سكني لتوزيع بطاقات الاستلام."
+      },
+      {
+        "step": 3,
+        "title": "الاستلام المنتظم وفق الجدول الدوري",
+        "description": "يتم إبلاغ الأسر بموعد وصول سيارات التوزيع المبردة للسلال الخضراء أو الطرود الجافة في نقطة التوزيع المعتمدة للحي."
+      }
+    ],
+    "troubleshooting": [
+      "إذا كان تجمع الخيام الخاص بكم غير مدرج في نقاط توزيع الوجبات الساخنة: يمكن لممثل التجمع مراجعة أقرب مطبخ مجتمعي شريك لتقديم كشف رسمي بعدد الأسر وأرقام الهويات."
+    ],
+    "officialUrl": "https://www.anera.org/where-we-work/palestine/",
+    "contactInfo": "المنصة الرسمية لمؤسسة ANERA ومكاتبها الميدانية في قطاع غزة",
+    "warningNote": "تنبيه: جميع الوجبات والطرود المقدمة من مؤسسة ANERA مجانية تماماً ومخصصة للأسر المحتاجة ولا يجوز بيعها بأي حال.",
+    "faqs": [
+      {
+        "question": "هل تقدم مؤسسة ANERA مساعدات طبية أو أدوية للأفراد؟",
+        "answer": "توزع المؤسسة الأدوية والمستلزمات الطبية مجاناً عبر شبكة العيادات الأهلية والمراكز الصحية الشريكة في مختلف محافظات القطاع، ويمكن للمرضى استلامها بوصفة طبية من تلك المراكز."
+      },
+      {
+        "question": "كيف تدعم المؤسسة المزارعين المحليين في غزة؟",
+        "answer": "من خلال تزويد المزارعين بالبذور والأسمدة ومستلزمات إعادة تأهيل الدفيئات الزراعية (الحمامات البلاستيكية)، ثم شراء محاصيلهم لتوزيعها مجاناً في سلال خضار على الأسر النازحة."
+      }
+    ],
+    "updatedAt": "2026-10-15",
+    "shortName": "مؤسسة إنيره والمطابخ المجتمعية",
+    "englishName": "ANERA Community Relief Gaza",
+    "tags": [
+      "وجبات ساخنة",
+      "سلال خضار"
+    ],
+    "aidValue": "وجبات يومية + سلة خضار"
+  }
+];
+
+    // التصنيفات المطابقة للصورة تماماً
+    const CATEGORIES = [
+      {
+        id: 'all',
+        name: 'الكل',
+        activeClass: 'bg-slate-900 text-white font-extrabold shadow-sm',
+        inactiveClass: 'bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold'
+      },
+      {
+        id: 'official',
+        name: 'التسجيلات الرسمية',
+        activeClass: 'bg-emerald-600 text-white font-extrabold shadow-sm',
+        inactiveClass: 'bg-emerald-100/90 text-emerald-800 hover:bg-emerald-200/80 font-bold'
+      },
+      {
+        id: 'relief',
+        name: 'المساعدات والإغاثة',
+        activeClass: 'bg-amber-600 text-white font-extrabold shadow-sm',
+        inactiveClass: 'bg-amber-100/90 text-amber-800 hover:bg-amber-200/80 font-bold'
+      },
+      {
+        id: 'orphans',
+        name: 'رعاية الأيتام',
+        activeClass: 'bg-rose-600 text-white font-extrabold shadow-sm',
+        inactiveClass: 'bg-rose-100/90 text-rose-800 hover:bg-rose-200/80 font-bold'
+      }
+    ];
+
+    const GOVERNORATES = [
+      'الكل',
+      'شمال غزة',
+      'مدينة غزة',
+      'دير البلح (الوسطى)',
+      'خانيونس',
+      'رفح'
+    ];
+
+    let state = {
+      initiatives: [...INITIAL_INITIATIVES],
+      activeView: 'home',
+      selectedInitiativeId: INITIAL_INITIATIVES[0].id,
+      openGuideTabs: [],
+      searchQuery: '',
+      selectedCategory: 'all',
+      selectedGov: 'الكل',
+      savedIds: [],
+      checkedReqs: {},
+      openFaqIndex: 0,
+      showAdPreview: true,
+      blobUrls: {}
+    };
+
+    function showToast(msg) {
+      const container = document.getElementById('toastContainer');
+      const textEl = document.getElementById('toastText');
+      if (!container || !textEl) return;
+      textEl.textContent = msg;
+      container.classList.remove('hidden');
+      container.classList.add('flex');
+      setTimeout(() => {
+        container.classList.add('hidden');
+        container.classList.remove('flex');
+      }, 3500);
+    }
+
+    function copyText(text, msg) {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text);
+        } else {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }
+        showToast(msg || 'تم النسخ بنجاح');
+      } catch (e) {
+        showToast('تعذر النسخ التلقائي');
+      }
+    }
+
+    // توليد صفحة HTML مستقلة بتصميم نظيف وبسيط لكل دليل لفتحها في تبويبة متصفح جديدة (target="_blank")
+    function buildStandaloneGuideHtml(item) {
+      const reqsHtml = (item.requirements || [])
+        .map((r) => `<li style="margin-bottom:8px;">${r}</li>`)
+        .join('');
+      const stepsHtml = (item.applySteps || [])
+        .map(
+          (st) => `
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin-bottom:10px;">
+            <strong style="color:#15803d;display:block;margin-bottom:4px;">الخطوة ${st.step}: ${st.title}</strong>
+            <p style="margin:0;color:#475569;font-size:14px;">${st.description}</p>
+          </div>`
+        )
+        .join('');
+      const faqsHtml = (item.faqs || [])
+        .map(
+          (f) => `
+          <div style="border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin-bottom:10px;background:#fff;">
+            <strong style="color:#0f172a;display:block;margin-bottom:6px;">س: ${f.question}</strong>
+            <p style="margin:0;color:#475569;font-size:14px;">ج: ${f.answer}</p>
+          </div>`
+        )
+        .join('');
+
+      return `<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${item.shortName || item.title} | روابط المساعدات - غزة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/cairo@5.1.0/index.min.css" rel="stylesheet" />
+  <style>
+    *, body { font-family: 'Cairo', 'Tajawal', sans-serif; letter-spacing: 0px; -webkit-font-smoothing: antialiased; }
+    body { background: #f8fafc; color: #1e293b; margin: 0; padding: 0; line-height: 1.8; }
+    .topbar { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 14px 20px; font-weight: 800; color: #0f172a; text-align: center; }
+    .container { max-width: 800px; margin: 28px auto; padding: 0 16px 40px; }
+    .card { background: #fff; border: 2px solid #22c55e; border-radius: 20px; overflow: hidden; padding: 28px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+    .title-box { text-align: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 18px; margin-bottom: 20px; }
+    h1 { margin: 0 0 6px 0; font-size: 26px; color: #0f172a; }
+    .en { color: #94a3b8; font-size: 13px; }
+    .value-box { background: #f0fdf4; border: 1px dashed #86efac; border-radius: 14px; padding: 14px; text-align: center; margin: 18px 0; }
+    h2 { color: #0f172a; font-size: 18px; border-right: 4px solid #16a34a; padding-right: 10px; margin-top: 26px; }
+    .cta-btn { display: block; background: #16a34a; color: #fff; font-weight: 800; text-align: center; text-decoration: none; padding: 15px 24px; border-radius: 14px; font-size: 16px; margin: 24px 0; }
+    .cta-btn:hover { background: #15803d; }
+    .warn { background: #fffbeb; border-right: 4px solid #f59e0b; padding: 14px; border-radius: 10px; color: #78350f; font-size: 14px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <div class="topbar">روابط المساعدات - غزة | صفحة التسجيل والشرح التفصيلي</div>
+  <div class="container">
+    <div class="card">
+      <div class="title-box">
+        <h1>${item.shortName || item.title}</h1>
+        <div class="en">${item.englishName || item.organization}</div>
+      </div>
+      <div class="value-box">
+        <div style="font-size:12px;color:#64748b;">قيمة المساعدة</div>
+        <div style="font-size:16px;font-weight:800;color:#15803d;">${item.aidValue || 'مساعدات إغاثية وغذائية'}</div>
+      </div>
+      <a class="cta-btn" href="${item.officialUrl}" target="_blank" rel="nofollow noopener noreferrer">الانتقال إلى رابط التسجيل الرسمي المباشر ↗</a>
+      <h2>نبذة وتفاصيل المساعدة</h2>
+      <p>${item.summary}</p>
+      <p style="background:#f8fafc;padding:14px;border-radius:12px;border:1px solid #e2e8f0;font-size:14px;">${item.detailedExplanation || ''}</p>
+      <h2>الأوراق والبيانات المطلوبة</h2>
+      <ul>${reqsHtml}</ul>
+      <h2>خطوات التسجيل بالتفصيل</h2>
+      ${stepsHtml}
+      <div class="warn"><strong>⚠️ تنبيه أمان:</strong> ${item.warningNote}</div>
+      <h2>الأسئلة الشائعة</h2>
+      ${faqsHtml}
+    </div>
+  </div>
+</body>
+</html>`;
+    }
+
+    function refreshBlobUrls() {
+      state.initiatives.forEach((item) => {
+        if (!state.blobUrls[item.id]) {
+          try {
+            const html = buildStandaloneGuideHtml(item);
+            const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+            state.blobUrls[item.id] = URL.createObjectURL(blob);
+          } catch (e) {
+            state.blobUrls[item.id] = item.officialUrl;
+          }
+        }
+      });
+    }
+
+    function changeArabicFont(fontName) {
+      document.documentElement.style.setProperty('--app-font', `'${fontName}', 'Cairo', 'Tajawal', sans-serif`);
+      ['Cairo', 'Tajawal', 'Almarai'].forEach((fn) => {
+        const btn = document.getElementById('fontBtn-' + fn);
+        if (btn) {
+          if (fn === fontName) {
+            btn.className = 'px-2 py-0.5 rounded text-[11px] font-extrabold bg-white text-emerald-700 shadow-sm';
+          } else {
+            btn.className = 'px-2 py-0.5 rounded text-[11px] font-bold text-slate-600 hover:text-slate-900';
+          }
+        }
+      });
+      showToast('تم تغيير خط الموقع إلى خط ' + fontName);
+    }
+
+    function toggleMobileMenu() {
+      const m = document.getElementById('mobileMenu');
+      if (m) m.classList.toggle('hidden');
+    }
+
+    function toggleAdPreview() {
+      state.showAdPreview = !state.showAdPreview;
+      document.querySelectorAll('.adsense-slot').forEach((el) => {
+        if (state.showAdPreview) el.classList.remove('hidden');
+        else el.classList.add('hidden');
+      });
+      if (state.activeView === 'guide') renderSingleGuide();
+    }
+
+    function switchMainView(viewName) {
+      state.activeView = viewName;
+      const views = ['home', 'guide', 'adsense-studio', 'privacy', 'disclaimer', 'terms', 'about', 'contact'];
+      views.forEach((v) => {
+        const el = document.getElementById('view-' + v);
+        if (el) {
+          if (v === viewName) el.classList.remove('hidden');
+          else el.classList.add('hidden');
+        }
+      });
+
+      document.querySelectorAll('#desktopNav .nav-btn').forEach((btn) => {
+        const navKey = btn.getAttribute('data-nav');
+        if (navKey === 'adsense-studio') return;
+        if (navKey === viewName) {
+          btn.className = 'nav-btn text-base font-extrabold text-emerald-600 transition-colors';
+        } else {
+          btn.className = 'nav-btn text-base font-bold text-slate-600 hover:text-emerald-600 transition-colors';
+        }
+      });
+
+      renderOpenTabsBar();
+      if (viewName === 'guide') {
+        renderSingleGuide();
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openInitiativeInAppAndNewTab(id, openBrowserTab) {
+      if (!state.openGuideTabs.includes(id)) {
+        state.openGuideTabs.push(id);
+      }
+      state.selectedInitiativeId = id;
+      state.openFaqIndex = 0;
+      switchMainView('guide');
+
+      if (openBrowserTab) {
+        const blobUrl = state.blobUrls[id];
+        if (blobUrl) {
+          try {
+            window.open(blobUrl, '_blank', 'noopener,noreferrer');
+          } catch (e) {}
+        }
+      }
+    }
+
+    function closeGuideTab(id, evt) {
+      if (evt) evt.stopPropagation();
+      state.openGuideTabs = state.openGuideTabs.filter((t) => t !== id);
+      if (state.openGuideTabs.length === 0) {
+        switchMainView('home');
+      } else if (state.selectedInitiativeId === id) {
+        state.selectedInitiativeId = state.openGuideTabs[state.openGuideTabs.length - 1];
+        if (state.activeView === 'guide') renderSingleGuide();
+      }
+      renderOpenTabsBar();
+    }
+
+    function renderOpenTabsBar() {
+      const bar = document.getElementById('openTabsBar');
+      const container = document.getElementById('openTabsContainer');
+      if (!bar || !container) return;
+
+      if (state.openGuideTabs.length === 0) {
+        bar.classList.add('hidden');
+        return;
+      }
+      bar.classList.remove('hidden');
+
+      let html = `
+        <button
+          type="button"
+          onclick="switchMainView('home')"
+          class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold transition-all ${
+            state.activeView === 'home'
+              ? 'bg-emerald-600 text-white'
+              : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+          }"
+        >
+          🏠 <span>الرئيسية</span>
+        </button>
+      `;
+
+      state.openGuideTabs.forEach((tabId) => {
+        const item = state.initiatives.find((i) => i.id === tabId);
+        if (!item) return;
+        const isCurrent = state.activeView === 'guide' && state.selectedInitiativeId === tabId;
+        html += `
+          <div
+            onclick="openInitiativeInAppAndNewTab('${item.id}', false)"
+            class="shrink-0 inline-flex items-center gap-2 px-3 py-1 rounded-lg text-xs font-semibold cursor-pointer border transition-all max-w-[220px] ${
+              isCurrent
+                ? 'bg-white text-slate-950 border-emerald-400 font-bold'
+                : 'bg-slate-800 text-slate-300 border-slate-700 hover:bg-slate-700'
+            }"
+          >
+            <span class="truncate">${item.shortName || item.title}</span>
+            <button
+              type="button"
+              onclick="closeGuideTab('${item.id}', event)"
+              class="rounded px-1 hover:text-red-400"
+              title="إغلاق التبويب"
+            >
+              ✕
+            </button>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function handleSearchInput(val) {
+      state.searchQuery = val || '';
+      const clearBtn = document.getElementById('clearSearchBtn');
+      if (clearBtn) {
+        if (state.searchQuery.trim().length > 0) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+      }
+      renderHomeFiltersAndCards();
+    }
+
+    function clearSearch() {
+      const inp = document.getElementById('searchInput');
+      if (inp) inp.value = '';
+      handleSearchInput('');
+    }
+
+    function selectCategoryFilter(catId) {
+      state.selectedCategory = catId;
+      if (state.activeView !== 'home') switchMainView('home');
+      renderHomeFiltersAndCards();
+    }
+
+    function selectGovFilter(gov) {
+      state.selectedGov = gov;
+      renderHomeFiltersAndCards();
+    }
+
+    function resetAllFilters() {
+      clearSearch();
+      state.selectedCategory = 'all';
+      state.selectedGov = 'الكل';
+      renderHomeFiltersAndCards();
+    }
+
+    function toggleSaveInitiative(id, evt) {
+      if (evt) evt.stopPropagation();
+      const exists = state.savedIds.includes(id);
+      if (exists) {
+        state.savedIds = state.savedIds.filter((x) => x !== id);
+      } else {
+        state.savedIds.push(id);
+      }
+      try {
+        localStorage.setItem('gaza_aid_saved_html', JSON.stringify(state.savedIds));
+      } catch (e) {}
+      showToast(exists ? 'تمت إزالة الرابط من المحفوظات' : 'تم حفظ الرابط في المفضلة');
+      renderHomeFiltersAndCards();
+    }
+
+    function getFilteredInitiatives() {
+      const q = state.searchQuery.trim().toLowerCase();
+      return state.initiatives.filter((item) => {
+        const matchCat = state.selectedCategory === 'all' || item.category === state.selectedCategory;
+        const matchGov =
+          state.selectedGov === 'الكل' ||
+          (item.governorates && item.governorates.includes(state.selectedGov));
+        const matchQ =
+          !q ||
+          (item.shortName && item.shortName.toLowerCase().includes(q)) ||
+          (item.englishName && item.englishName.toLowerCase().includes(q)) ||
+          item.title.toLowerCase().includes(q) ||
+          item.organization.toLowerCase().includes(q) ||
+          item.summary.toLowerCase().includes(q);
+        return matchCat && matchGov && matchQ;
+      });
+    }
+
+    function renderHomeFiltersAndCards() {
+      refreshBlobUrls();
+
+      // 1. أزرار التصنيفات الملونة المطابقة للصورة
+      const catContainer = document.getElementById('categoryGridContainer');
+      if (catContainer) {
+        let catHtml = '';
+        CATEGORIES.forEach((cat) => {
+          const active = state.selectedCategory === cat.id;
+          catHtml += `
+            <button
+              type="button"
+              onclick="selectCategoryFilter('${cat.id}')"
+              class="px-4 py-2 rounded-xl text-xs sm:text-sm transition-all ${
+                active ? cat.activeClass : cat.inactiveClass
+              }"
+            >
+              ${cat.name}
+            </button>
+          `;
+        });
+        catContainer.innerHTML = catHtml;
+      }
+
+      // 2. فلتر المحافظات السريع
+      const govContainer = document.getElementById('govFilterContainer');
+      if (govContainer) {
+        let govHtml = `<span class="text-slate-400">المحافظة:</span>`;
+        GOVERNORATES.forEach((gov) => {
+          const active = state.selectedGov === gov;
+          govHtml += `
+            <button
+              type="button"
+              onclick="selectGovFilter('${gov}')"
+              class="px-2 py-0.5 rounded-md text-[11px] transition-all ${
+                active
+                  ? 'bg-emerald-600 text-white font-bold'
+                  : 'text-slate-500 hover:bg-slate-100'
+              }"
+            >
+              ${gov}
+            </button>
+          `;
+        });
+        govContainer.innerHTML = govHtml;
+      }
+
+      // 3. عرض البطاقات بالتصميم البسيط المطابق للصورة (3 أعمدة، إطار أخضر، محتوى بالمنتصف)
+      const filtered = getFilteredInitiatives();
+      const countBadge = document.getElementById('initiativesCountBadge');
+      if (countBadge) {
+        countBadge.textContent = `عدد الروابط المتاحة: ${filtered.length}`;
+      }
+
+      const cardsContainer = document.getElementById('initiativesCardsContainer');
+      if (!cardsContainer) return;
+
+      if (filtered.length === 0) {
+        cardsContainer.className = 'block';
+        cardsContainer.innerHTML = `
+          <div class="bg-white rounded-2xl border border-slate-200 p-10 text-center">
+            <h3 class="text-base font-bold text-slate-800 mb-1">لا توجد نتائج مطابقة لبحثك</h3>
+            <p class="text-sm text-slate-500 mb-4">جرّب البحث بكلمة أخرى أو الضغط على "الكل".</p>
+            <button
+              type="button"
+              onclick="resetAllFilters()"
+              class="rounded-xl bg-emerald-600 px-5 py-2.5 text-xs font-bold text-white hover:bg-emerald-700"
+            >
+              عرض جميع الروابط (${state.initiatives.length})
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      cardsContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
+      let cardsHtml = '';
+      filtered.forEach((item) => {
+        const blobUrl = state.blobUrls[item.id] || item.officialUrl;
+        const tags = item.tags || ['مساعدات إنسانية', 'إغاثة عاجلة'];
+        const tagsHtml = tags
+          .map(
+            (t) => `
+            <span class="inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-3 py-1 text-xs font-bold text-emerald-700">
+              <span>•</span> ${t}
+            </span>`
+          )
+          .join('');
+
+        cardsHtml += `
+          <article
+            onclick="openInitiativeInAppAndNewTab('${item.id}', true)"
+            class="aid-card cursor-pointer rounded-2xl bg-white p-6 text-center flex flex-col justify-between"
+          >
+            <div>
+              <!-- اسم الجهة بالعربية والإنجليزية -->
+              <div class="border-b border-slate-100 pb-3.5 mb-3.5">
+                <h2 class="text-[20px] font-bold text-slate-800 mb-1 leading-snug">
+                  ${item.shortName || item.organization}
+                </h2>
+                <p class="en-font text-[12px] font-medium text-slate-400" dir="ltr">
+                  ${item.englishName || 'Official Aid Portal'}
+                </p>
+              </div>
+
+              <!-- الوصف المختصر -->
+              <p class="text-[14px] font-medium text-slate-500 leading-relaxed mb-4 min-h-[42px] flex items-center justify-center">
+                ${item.summary}
+              </p>
+
+              <!-- الوسوم (Tags) -->
+              <div class="flex flex-wrap items-center justify-center gap-2 mb-4">
+                ${tagsHtml}
+              </div>
+
+              <!-- صندوق قيمة المساعدة المنقط -->
+              <div class="rounded-xl bg-[#f0fdf4] border border-dashed border-[#86efac] py-3 px-4 mb-4">
+                <span class="block text-[11px] font-medium text-slate-400 mb-0.5">
+                  قيمة المساعدة
+                </span>
+                <strong class="block text-[14px] font-bold text-[#15803d]">
+                  ${item.aidValue || 'طرود ومساعدات إغاثية'}
+                </strong>
+              </div>
+            </div>
+
+            <!-- زر التسجيل المباشر + زر شرح خطوات التسجيل في تبويبة جديدة -->
+            <div class="space-y-2">
+              <a
+                href="${item.officialUrl}"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                onclick="event.stopPropagation();"
+                class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#16a34a] hover:bg-[#15803d] text-white font-bold py-3 px-4 text-[14px] shadow-sm transition-all"
+              >
+                <span>التسجيل المباشر</span>
+                <span class="text-base leading-none">↗</span>
+              </a>
+              <a
+                href="${blobUrl}"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="event.stopPropagation(); openInitiativeInAppAndNewTab('${item.id}', false);"
+                class="w-full inline-flex items-center justify-center gap-1.5 rounded-xl bg-emerald-50/80 hover:bg-emerald-100/80 text-emerald-800 font-bold py-2 px-3 text-[12px] border border-emerald-200/80 transition-all"
+              >
+                <span>شرح التسجيل والأوراق المطلوبة</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </article>
+        `;
+      });
+
+      cardsContainer.innerHTML = cardsHtml;
+    }
+
+    function toggleReqItem(initId, idx) {
+      const key = initId + '_' + idx;
+      state.checkedReqs[key] = !state.checkedReqs[key];
+      renderSingleGuide();
+    }
+
+    function toggleFaqItem(idx) {
+      state.openFaqIndex = state.openFaqIndex === idx ? -1 : idx;
+      renderSingleGuide();
+    }
+
+    function renderSingleGuide() {
+      refreshBlobUrls();
+      const container = document.getElementById('singleGuideContainer');
+      if (!container) return;
+      const item =
+        state.initiatives.find((i) => i.id === state.selectedInitiativeId) ||
+        state.initiatives[0];
+      if (!item) return;
+
+      const blobUrl = state.blobUrls[item.id] || item.officialUrl;
+
+      let reqsHtml = '';
+      (item.requirements || []).forEach((req, idx) => {
+        const checked = !!state.checkedReqs[item.id + '_' + idx];
+        reqsHtml += `
+          <div
+            onclick="toggleReqItem('${item.id}', ${idx})"
+            class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition-all ${
+              checked
+                ? 'bg-emerald-50/60 border-emerald-300 text-emerald-950'
+                : 'bg-white border-slate-200 hover:bg-slate-50 text-slate-700'
+            }"
+          >
+            <span class="text-base font-bold text-emerald-700">${checked ? '☑️' : '⬜'}</span>
+            <span class="text-sm font-medium ${checked ? 'line-through text-slate-500' : ''}">${req}</span>
+          </div>
+        `;
+      });
+
+      let stepsHtml = '';
+      (item.applySteps || []).forEach((st) => {
+        stepsHtml += `
+          <div class="flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50/50 p-4">
+            <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-white font-bold text-sm">
+              ${st.step}
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-slate-900 mb-1">${st.title}</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">${st.description}</p>
+            </div>
+          </div>
+        `;
+      });
+
+      let faqsHtml = '';
+      (item.faqs || []).forEach((faq, idx) => {
+        const isOpen = state.openFaqIndex === idx;
+        faqsHtml += `
+          <div class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+            <button
+              type="button"
+              onclick="toggleFaqItem(${idx})"
+              class="flex w-full items-center justify-between p-4 text-right font-bold text-slate-900 hover:bg-slate-50 transition-colors"
+            >
+              <span class="text-sm sm:text-base">${faq.question}</span>
+              <span class="text-emerald-700 font-bold">${isOpen ? '▲' : '▼'}</span>
+            </button>
+            ${
+              isOpen
+                ? `<div class="px-4 pb-4 pt-2 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/50">${faq.answer}</div>`
+                : ''
+            }
+          </div>
+        `;
+      });
+
+      container.innerHTML = `
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+          <button
+            type="button"
+            onclick="switchMainView('home')"
+            class="inline-flex items-center gap-1.5 rounded-xl bg-white border border-slate-200 px-4 py-2 text-xs font-bold text-slate-700 hover:bg-slate-50"
+          >
+            → العودة لصفحة البطاقات الرئيسية
+          </button>
+          <div class="flex items-center gap-2">
+            <a
+              href="${blobUrl}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1 rounded-xl bg-emerald-600 px-3.5 py-2 text-xs font-bold text-white hover:bg-emerald-700"
+            >
+              فتح في تبويبة متصفح مستقلة ↗
+            </a>
+            <button
+              type="button"
+              onclick="openSchemaModal()"
+              class="inline-flex items-center gap-1 rounded-xl bg-slate-800 px-3 py-2 text-xs font-semibold text-white hover:bg-slate-700"
+            >
+              SEO Schema
+            </button>
+          </div>
+        </div>
+
+        <article class="bg-white rounded-2xl border-2 border-emerald-500 p-6 sm:p-8 shadow-sm space-y-6">
+          <div class="text-center border-b border-slate-100 pb-6">
+            <span class="inline-block rounded-full bg-emerald-50 border border-emerald-200 px-3 py-1 text-xs font-bold text-emerald-700 mb-2">
+              ${item.categoryName} | تحديث: ${item.updatedAt}
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1">
+              ${item.shortName || item.title}
+            </h1>
+            <p class="text-xs text-slate-400" dir="ltr">${item.englishName || item.organization}</p>
+          </div>
+
+          <div class="rounded-xl bg-emerald-50/60 border border-dashed border-emerald-300 p-4 text-center">
+            <span class="block text-xs text-slate-500 mb-1">قيمة ونوع المساعدة</span>
+            <strong class="text-base font-extrabold text-emerald-700">${item.aidValue || 'طرود ومساعدات إغاثية'}</strong>
+          </div>
+
+          <!-- زر التسجيل المباشر في الرابط الرسمي -->
+          <div class="text-center">
+            <a
+              href="${item.officialUrl}"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              class="w-full sm:w-auto min-w-[280px] inline-flex items-center justify-center gap-2 rounded-xl bg-[#16a34a] hover:bg-[#15803d] px-8 py-4 text-base font-extrabold text-white shadow-md transition-all"
+            >
+              <span>الانتقال لرابط التسجيل المباشر (${item.shortName || item.organization})</span>
+              <span>↗</span>
+            </a>
+            <p class="mt-2 text-[11px] text-slate-400" dir="ltr">${item.officialUrl}</p>
+          </div>
+
+          <section>
+            <h2 class="text-lg font-extrabold text-slate-900 mb-2 border-r-4 border-emerald-600 pr-3">تفاصيل وشرح المبادرة</h2>
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">${item.summary}</p>
+            <p class="text-sm text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200 leading-relaxed">${item.detailedExplanation || ''}</p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">الوثائق والبيانات المطلوبة للتسجيل</h2>
+            <div class="space-y-2">${reqsHtml}</div>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">خطوات التسجيل بالتفصيل</h2>
+            <div class="space-y-3">${stepsHtml}</div>
+          </section>
+
+          <section class="rounded-xl bg-amber-50 border-r-4 border-amber-500 p-4 text-sm text-amber-950">
+            <strong>⚠️ تنبيه أمان:</strong> ${item.warningNote}
+          </section>
+
+          <section>
+            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">الأسئلة الشائعة</h2>
+            <div class="space-y-2.5">${faqsHtml}</div>
+          </section>
+        </article>
+      `;
+    }
+
+    function getCurrentSchemaString() {
+      const item =
+        state.initiatives.find((i) => i.id === state.selectedInitiativeId) ||
+        state.initiatives[0];
+      const schema = {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Article',
+            headline: item.title,
+            description: item.summary,
+            dateModified: item.updatedAt,
+            author: { '@type': 'Organization', name: 'روابط المساعدات - غزة' }
+          },
+          {
+            '@type': 'FAQPage',
+            mainEntity: (item.faqs || []).map((f) => ({
+              '@type': 'Question',
+              name: f.question,
+              acceptedAnswer: { '@type': 'Answer', text: f.answer }
+            }))
+          }
+        ]
+      };
+      return JSON.stringify(schema, null, 2);
+    }
+
+    function openSchemaModal() {
+      const modal = document.getElementById('schemaModal');
+      const pre = document.getElementById('schemaJsonPre');
+      const meta = document.getElementById('schemaMetaSummary');
+      const item =
+        state.initiatives.find((i) => i.id === state.selectedInitiativeId) ||
+        state.initiatives[0];
+      if (!modal || !pre || !meta) return;
+
+      meta.innerHTML = `
+        <div><strong>Meta Title:</strong> ${item.shortName || item.title} | روابط المساعدات - غزة</div>
+        <div><strong>Meta Description:</strong> ${item.summary}</div>
+      `;
+      pre.textContent = getCurrentSchemaString();
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeSchemaModal() {
+      const modal = document.getElementById('schemaModal');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function copyCurrentSchema() {
+      copyText(getCurrentSchemaString(), 'تم نسخ كود Schema.org JSON-LD بنجاح');
+    }
+
+    function copyAllInitiativesJson() {
+      copyText(JSON.stringify(state.initiatives, null, 2), 'تم نسخ قاعدة البيانات الكاملة (JSON)');
+    }
+
+    function handleAddInitiativeSubmit(evt) {
+      evt.preventDefault();
+      const shortName = document.getElementById('newTitle').value.trim();
+      const englishName = document.getElementById('newOrg').value.trim();
+      const category = document.getElementById('newCat').value;
+      const officialUrl = document.getElementById('newUrl').value.trim();
+      const summary = document.getElementById('newSummary').value.trim();
+      const aidValue = document.getElementById('newReq1').value.trim();
+      const req2 = document.getElementById('newReq2').value.trim();
+
+      if (!shortName || !summary) {
+        showToast('يرجى تعبئة الحقول المطلوبة');
+        return;
+      }
+
+      const catObj = CATEGORIES.find((c) => c.id === category) || CATEGORIES[1];
+      const newId = 'gaza-aid-' + Date.now();
+      const created = {
+        id: newId,
+        shortName: shortName,
+        englishName: englishName || 'Humanitarian Aid Portal',
+        title: shortName + ' - التسجيل للمساعدات في قطاع غزة',
+        organization: shortName,
+        category: category,
+        categoryName: catObj.name,
+        tags: [catObj.name, 'إغاثة عاجلة'],
+        aidValue: aidValue || 'طرود ومساعدات إغاثية',
+        status: 'active',
+        governorates: ['شمال غزة', 'مدينة غزة', 'دير البلح (الوسطى)', 'خانيونس', 'رفح'],
+        targetAudience: 'الأسر المتضررة والنازحة في قطاع غزة',
+        summary: summary,
+        detailedExplanation:
+          summary +
+          ' يتم التسجيل بشكل إلكتروني مجاني عبر البوابة الرسمية المعتمدة، مع ضرورة التأكد من صحة رقم الهوية ورقم الهاتف الفعال لاستقبال رسائل المراجعة.',
+        requirements: [req2 || 'بطاقة الهوية الشخصية لرب الأسرة ورقم هاتف فعال.'],
+        applySteps: [
+          { step: 1, title: 'الدخول إلى البوابة الرسمية', description: 'افتح الرابط الرسمي المعتمد وتأكد من صحة النطاق.' },
+          { step: 2, title: 'إدخال بيانات الأسرة والعنوان', description: 'أدخل رقم الهوية وحدد محافظة النزوح أو السكن الحالي بدقة.' }
+        ],
+        troubleshooting: ['تأكد من إدخال أرقام الهوية باللغة الإنجليزية (9 خانات).'],
+        officialUrl: officialUrl || 'https://www.unrwa.org',
+        contactInfo: 'عبر القنوات الرسمية للمؤسسة المانحة',
+        warningNote: 'التسجيل مجاني بالكامل ولا يطلب أي رسوم مالية أو أرقام سرية.',
+        faqs: [
+          { question: 'هل التسجيل في هذا الرابط مجاني؟', answer: 'نعم، التسجيل مجاني 100% ويتم عبر البوابة الرسمية للمؤسسة مباشرة.' }
+        ],
+        updatedAt: '2026-10-20'
+      };
+
+      state.initiatives.unshift(created);
+      refreshBlobUrls();
+      renderHomeFiltersAndCards();
+      switchMainView('home');
+      showToast('تمت إضافة البطاقة الجديدة بنجاح!');
+    }
+
+    function handleContactFormSubmit(evt) {
+      evt.preventDefault();
+      document.getElementById('contactName').value = '';
+      document.getElementById('contactEmail').value = '';
+      document.getElementById('contactMsg').value = '';
+      showToast('تم استلام رسالتك بنجاح! شكراً لتواصلك معنا.');
+    }
+
+    window.onload = function () {
+      try {
+        const saved = localStorage.getItem('gaza_aid_saved_html');
+        if (saved) state.savedIds = JSON.parse(saved);
+      } catch (e) {}
+      refreshBlobUrls();
+      renderHomeFiltersAndCards();
+      renderOpenTabsBar();
+    };
+  </script>
+</body>
+</html>
