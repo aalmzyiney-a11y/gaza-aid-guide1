@@ -2836,23 +2836,27 @@
   </div>
 </body>
 </html>`;
-    }
+}
 
-    function refreshBlobUrls() {
-      state.initiatives.forEach((item) => {
-        if (!state.blobUrls[item.id]) {
-          try {
-            const html = buildStandaloneGuideHtml(item);
-            const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-            state.blobUrls[item.id] = URL.createObjectURL(blob);
-          } catch (e) {
-            state.blobUrls[item.id] = item.officialUrl;
-          }
-        }
-      });
-    }
+function refreshBlobUrls() {
+  state.initiatives.forEach((item) => {
+    state.blobUrls[item.id] = '?guide=' + encodeURIComponent(item.id);
+  });
 
-    function changeArabicFont(fontName) {
+  const params = new URLSearchParams(window.location.search);
+  const guideId = params.get('guide');
+  if (guideId) {
+    const targetItem = state.initiatives.find((i) => String(i.id) === String(guideId));
+    if (targetItem) {
+      const html = buildStandaloneGuideHtml(targetItem);
+      document.open();
+      document.write(html);
+      document.close();
+    }
+  }
+}
+
+function changeArabicFont(fontName) {
       document.documentElement.style.setProperty('--app-font', `'${fontName}', 'Cairo', 'Tajawal', sans-serif`);
       ['Cairo', 'Tajawal', 'Almarai'].forEach((fn) => {
         const btn = document.getElementById('fontBtn-' + fn);
