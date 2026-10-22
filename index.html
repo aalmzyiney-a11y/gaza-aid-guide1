@@ -334,6 +334,7 @@
                   <option value="official">التسجيلات الرسمية</option>
                   <option value="relief">المساعدات والإغاثة</option>
                   <option value="orphans">رعاية الأيتام</option>
+                  <option value="sports">رياضة</option>
                 </select>
               </div>
               <div>
@@ -2701,6 +2702,53 @@
       "سلال خضار"
     ],
     "aidValue": "وجبات يومية + سلة خضار"
+  },
+  {
+    "id": "barcelona-real-madrid-match",
+    "shortName": "مباراة برشلونة وريال مدريد",
+    "englishName": "Barcelona vs Real Madrid",
+    "title": "رابط مباراة برشلونة وريال مدريد",
+    "organization": "رابط مشاهدة المباراة",
+    "category": "sports",
+    "categoryName": "رياضة",
+    "tags": [
+      "برشلونة",
+      "ريال مدريد"
+    ],
+    "aidValue": "مشاهدة المباراة",
+    "valueLabel": "المحتوى",
+    "actionLabel": "مشاهدة المباراة",
+    "guideLabel": "تفاصيل المباراة",
+    "detailsLabel": "تفاصيل المباراة",
+    "requirementsLabel": "ملاحظات المشاهدة",
+    "stepsLabel": "طريقة المشاهدة",
+    "status": "active",
+    "governorates": [],
+    "targetAudience": "متابعو كرة القدم",
+    "summary": "افتح الرابط لمتابعة مباراة برشلونة وريال مدريد.",
+    "detailedExplanation": "يوجهك هذا الرابط إلى موقع مشاهدة مباراة برشلونة وريال مدريد. تأكد من الالتزام بقوانين بلدك وشروط الموقع.",
+    "requirements": [
+      "اتصال بالإنترنت.",
+      "قد يتطلب الموقع تسجيل الدخول أو توفر الخدمة في منطقتك."
+    ],
+    "applySteps": [
+      {
+        "step": 1,
+        "title": "افتح رابط المباراة",
+        "description": "اضغط على زر مشاهدة المباراة للانتقال إلى الموقع."
+      },
+      {
+        "step": 2,
+        "title": "تحقق من توفر البث",
+        "description": "راجع شروط الموقع وتوفر المشاهدة في منطقتك."
+      }
+    ],
+    "troubleshooting": [],
+    "officialUrl": "https://site4net.com/",
+    "contactInfo": "موقع المشاهدة",
+    "warningNote": "هذا رابط خارجي؛ تحقق من محتوى الموقع وشروطه قبل استخدامه.",
+    "faqs": [],
+    "updatedAt": "2026-10-22"
   }
 ];
 
@@ -2729,6 +2777,12 @@
         name: 'رعاية الأيتام',
         activeClass: 'bg-rose-600 text-white font-extrabold shadow-sm',
         inactiveClass: 'bg-rose-100/90 text-rose-800 hover:bg-rose-200/80 font-bold'
+      },
+      {
+        id: 'sports',
+        name: 'رياضة',
+        activeClass: 'bg-blue-600 text-white font-extrabold shadow-sm',
+        inactiveClass: 'bg-blue-100/90 text-blue-800 hover:bg-blue-200/80 font-bold'
       }
     ];
 
@@ -2846,20 +2900,19 @@
         <div class="en">${item.englishName || item.organization}</div>
       </div>
       <div class="value-box">
-        <div style="font-size:12px;color:#64748b;">قيمة المساعدة</div>
+        <div style="font-size:12px;color:#64748b;">${item.valueLabel || 'قيمة المساعدة'}</div>
         <div style="font-size:16px;font-weight:800;color:#15803d;">${item.aidValue || 'مساعدات إغاثية وغذائية'}</div>
       </div>
-      <a class="cta-btn" href="${item.officialUrl}" target="_blank" rel="nofollow noopener noreferrer">الانتقال إلى رابط التسجيل الرسمي المباشر ↗</a>
-      <h2>نبذة وتفاصيل المساعدة</h2>
+      <a class="cta-btn" href="${item.officialUrl}" target="_blank" rel="nofollow noopener noreferrer">${item.actionLabel || 'الانتقال إلى رابط التسجيل الرسمي المباشر'} ↗</a>
+      <h2>${item.detailsLabel || 'نبذة وتفاصيل المساعدة'}</h2>
       <p>${item.summary}</p>
       <p style="background:#f8fafc;padding:14px;border-radius:12px;border:1px solid #e2e8f0;font-size:14px;">${item.detailedExplanation || ''}</p>
-      <h2>الأوراق والبيانات المطلوبة</h2>
+      <h2>${item.requirementsLabel || 'الأوراق والبيانات المطلوبة'}</h2>
       <ul>${reqsHtml}</ul>
-      <h2>خطوات التسجيل بالتفصيل</h2>
+      <h2>${item.stepsLabel || 'خطوات التسجيل بالتفصيل'}</h2>
       ${stepsHtml}
       <div class="warn"><strong>⚠️ تنبيه أمان:</strong> ${item.warningNote}</div>
-      <h2>الأسئلة الشائعة</h2>
-      ${faqsHtml}
+      ${faqsHtml ? `<h2>الأسئلة الشائعة</h2>${faqsHtml}` : ''}
     </div>
   </div>
 </body>
@@ -3080,7 +3133,9 @@ function changeArabicFont(fontName) {
         const matchCat = state.selectedCategory === 'all' || item.category === state.selectedCategory;
         const matchGov =
           state.selectedGov === 'الكل' ||
-          (item.governorates && item.governorates.includes(state.selectedGov));
+          !item.governorates ||
+          item.governorates.length === 0 ||
+          item.governorates.includes(state.selectedGov);
         const matchQ =
           !q ||
           (item.shortName && item.shortName.toLowerCase().includes(q)) ||
@@ -3210,7 +3265,7 @@ function changeArabicFont(fontName) {
               <!-- صندوق قيمة المساعدة المنقط -->
               <div class="rounded-xl bg-[#f0fdf4] border border-dashed border-[#86efac] py-3 px-4 mb-4">
                 <span class="block text-[11px] font-medium text-slate-400 mb-0.5">
-                  قيمة المساعدة
+                  ${item.valueLabel || 'قيمة المساعدة'}
                 </span>
                 <strong class="block text-[14px] font-bold text-[#15803d]">
                   ${item.aidValue || 'طرود ومساعدات إغاثية'}
@@ -3227,7 +3282,7 @@ function changeArabicFont(fontName) {
                 onclick="event.stopPropagation();"
                 class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#16a34a] hover:bg-[#15803d] text-white font-bold py-3 px-4 text-[14px] shadow-sm transition-all"
               >
-                <span>التسجيل المباشر</span>
+                <span>${item.actionLabel || 'التسجيل المباشر'}</span>
                 <span class="text-base leading-none">↗</span>
               </a>
               <a
@@ -3237,7 +3292,7 @@ function changeArabicFont(fontName) {
                 onclick="event.stopPropagation(); openInitiativeInAppAndNewTab('${item.id}', false);"
                 class="w-full inline-flex items-center justify-center gap-1.5 rounded-xl bg-emerald-50/80 hover:bg-emerald-100/80 text-emerald-800 font-bold py-2 px-3 text-[12px] border border-emerald-200/80 transition-all"
               >
-                <span>شرح التسجيل والأوراق المطلوبة</span>
+                <span>${item.guideLabel || 'شرح التسجيل والأوراق المطلوبة'}</span>
                 <span>↗</span>
               </a>
             </div>
@@ -3365,7 +3420,7 @@ function changeArabicFont(fontName) {
           </div>
 
           <div class="rounded-xl bg-emerald-50/60 border border-dashed border-emerald-300 p-4 text-center">
-            <span class="block text-xs text-slate-500 mb-1">قيمة ونوع المساعدة</span>
+            <span class="block text-xs text-slate-500 mb-1">${item.valueLabel || 'قيمة ونوع المساعدة'}</span>
             <strong class="text-base font-extrabold text-emerald-700">${item.aidValue || 'طرود ومساعدات إغاثية'}</strong>
           </div>
 
@@ -3377,25 +3432,25 @@ function changeArabicFont(fontName) {
               rel="nofollow noopener noreferrer"
               class="w-full sm:w-auto min-w-[280px] inline-flex items-center justify-center gap-2 rounded-xl bg-[#16a34a] hover:bg-[#15803d] px-8 py-4 text-base font-extrabold text-white shadow-md transition-all"
             >
-              <span>الانتقال لرابط التسجيل المباشر (${item.shortName || item.organization})</span>
+              <span>${item.actionLabel || 'الانتقال لرابط التسجيل المباشر'} (${item.shortName || item.organization})</span>
               <span>↗</span>
             </a>
             <p class="mt-2 text-[11px] text-slate-400" dir="ltr">${item.officialUrl}</p>
           </div>
 
           <section>
-            <h2 class="text-lg font-extrabold text-slate-900 mb-2 border-r-4 border-emerald-600 pr-3">تفاصيل وشرح المبادرة</h2>
+            <h2 class="text-lg font-extrabold text-slate-900 mb-2 border-r-4 border-emerald-600 pr-3">${item.detailsLabel || 'تفاصيل وشرح المبادرة'}</h2>
             <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">${item.summary}</p>
             <p class="text-sm text-slate-600 bg-slate-50 p-4 rounded-xl border border-slate-200 leading-relaxed">${item.detailedExplanation || ''}</p>
           </section>
 
           <section>
-            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">الوثائق والبيانات المطلوبة للتسجيل</h2>
+            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">${item.requirementsLabel || 'الوثائق والبيانات المطلوبة للتسجيل'}</h2>
             <div class="space-y-2">${reqsHtml}</div>
           </section>
 
           <section>
-            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">خطوات التسجيل بالتفصيل</h2>
+            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">${item.stepsLabel || 'خطوات التسجيل بالتفصيل'}</h2>
             <div class="space-y-3">${stepsHtml}</div>
           </section>
 
@@ -3403,10 +3458,12 @@ function changeArabicFont(fontName) {
             <strong>⚠️ تنبيه أمان:</strong> ${item.warningNote}
           </section>
 
-          <section>
-            <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">الأسئلة الشائعة</h2>
-            <div class="space-y-2.5">${faqsHtml}</div>
-          </section>
+          ${faqsHtml ? `
+            <section>
+              <h2 class="text-lg font-extrabold text-slate-900 mb-3 border-r-4 border-emerald-600 pr-3">الأسئلة الشائعة</h2>
+              <div class="space-y-2.5">${faqsHtml}</div>
+            </section>
+          ` : ''}
         </article>
       `;
     }
